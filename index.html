@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TD Local SEO — Top 3 on Google in 90 Days</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Epilogue:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#f2f0ec;--white:#fff;--ink:#111010;--ink2:#2d2b29;--muted:#8a8680;
+  --border:#dbd8d2;--blue:#1d4ed8;--blue-soft:#e8eefb;--green:#15803d;
+  --green-soft:#dcf5e7;--red:#c81e1e;--red-soft:#fde8e8;--gold:#b8860b;
+  --serif:'Cormorant Garamond',Georgia,serif;--sans:'Epilogue',system-ui,sans-serif;
+  --sh-sm:0 1px 3px rgba(0,0,0,.06),0 1px 2px rgba(0,0,0,.04);
+  --sh:0 4px 16px rgba(0,0,0,.08),0 1px 4px rgba(0,0,0,.04);
+  --sh-lg:0 16px 48px rgba(0,0,0,.12),0 4px 12px rgba(0,0,0,.06);
+}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);background:var(--bg);color:var(--ink);font-size:15px;line-height:1.65;overflow-x:hidden}
+body::before{content:'';position:fixed;inset:0;z-index:999;pointer-events:none;
+  background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");opacity:.45}
+
+/* REVEAL */
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .65s cubic-bezier(.16,1,.3,1),transform .65s cubic-bezier(.16,1,.3,1)}
+.reveal.visible{opacity:1;transform:none}
+.d1{transition-delay:.08s}.d2{transition-delay:.16s}.d3{transition-delay:.24s}.d4{transition-delay:.32s}
+
+/* NAV */
+nav{background:rgba(242,240,236,.92);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:500;padding:0 48px;display:flex;align-items:center;justify-content:space-between;height:56px;transition:box-shadow .3s}
+nav.scrolled{box-shadow:var(--sh)}
+.nav-logo{display:flex;align-items:center;gap:9px;font-weight:700;font-size:13.5px;letter-spacing:-.01em;color:var(--ink);text-decoration:none}
+.logo-icon{width:28px;height:28px;background:var(--ink);border-radius:7px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.logo-icon svg{width:13px;height:13px;fill:white}
+.nav-links{display:flex;align-items:center;gap:30px}
+.nav-links a{text-decoration:none;color:var(--muted);font-size:12.5px;font-weight:500;letter-spacing:.01em;transition:color .2s;position:relative}
+.nav-links a::after{content:'';position:absolute;bottom:-3px;left:0;width:0;height:1px;background:var(--ink);transition:width .25s}
+.nav-links a:hover{color:var(--ink)}
+.nav-links a:hover::after{width:100%}
+.btn-nav{background:var(--ink)!important;color:white!important;padding:8px 18px;border-radius:7px;font-size:12.5px!important;font-weight:600!important;letter-spacing:.01em;transition:transform .15s,box-shadow .15s!important}
+.btn-nav::after{display:none!important}
+.btn-nav:hover{transform:translateY(-1px)!important;box-shadow:0 4px 14px rgba(0,0,0,.2)!important;color:white!important}
+
+/* LAYOUT */
+.wrap{max-width:920px;margin:0 auto;padding:0 48px}
+.divider{height:1px;background:var(--border);max-width:920px;margin:0 auto}
+.sec-label{display:inline-flex;align-items:center;gap:7px;font-size:10.5px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.12em;margin-bottom:14px}
+.sl-dot{width:5px;height:5px;border-radius:50%;background:var(--muted);flex-shrink:0}
+.sec-h{font-family:var(--serif);font-size:clamp(30px,4vw,44px);font-weight:600;line-height:1.1;letter-spacing:-.025em}
+.sec-h em{font-style:italic;font-weight:400}
+
+/* HERO */
+#hero{padding:72px 0 64px}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;background:var(--white);border:1px solid var(--border);border-radius:100px;padding:5px 14px 5px 8px;font-size:12px;font-weight:500;color:var(--ink2);margin-bottom:24px;box-shadow:var(--sh-sm)}
+.badge-dot{width:7px;height:7px;border-radius:50%;background:var(--green);flex-shrink:0;animation:pulse 2.2s ease-in-out infinite}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(21,128,61,.45)}55%{box-shadow:0 0 0 6px rgba(21,128,61,0)}}
+.hero-h1{font-family:var(--serif);font-size:clamp(48px,7.5vw,76px);font-weight:600;line-height:1.03;letter-spacing:-.025em;color:var(--ink);margin-bottom:24px;max-width:560px}
+.hero-h1 em{font-style:italic;font-weight:400}
+.hero-sub{font-size:14px;color:var(--muted);max-width:420px;margin-bottom:44px;line-height:1.75}
+.hero-sub strong{color:var(--ink);font-weight:600}
+.stats-bar{display:flex;border:1px solid var(--border);border-radius:12px;overflow:hidden;background:var(--white);box-shadow:var(--sh-sm);max-width:520px}
+.stat-item{flex:1;padding:18px 22px;border-right:1px solid var(--border);transition:background .2s;cursor:default}
+.stat-item:last-child{border-right:none}
+.stat-item:hover{background:var(--bg)}
+.stat-num{font-family:var(--serif);font-size:28px;font-weight:600;line-height:1;letter-spacing:-.03em;color:var(--ink)}
+.stat-label{font-size:11px;color:var(--muted);font-weight:500;margin-top:3px;line-height:1.3}
+
+/* VALUE */
+#value{padding:80px 0}
+.cards-row{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:34px}
+.card{background:var(--white);border:1px solid var(--border);border-radius:14px;padding:26px;transition:transform .3s cubic-bezier(.16,1,.3,1),box-shadow .3s}
+.card:hover{transform:translateY(-5px);box-shadow:var(--sh)}
+.card-ico{width:40px;height:40px;border-radius:10px;display:flex;align-items:center;justify-content:center;margin-bottom:16px;font-size:18px}
+.ico-b{background:#dbeafe}.ico-g{background:#dcfce7}.ico-a{background:#fef3c7}
+.card h3{font-size:14px;font-weight:600;margin-bottom:8px;letter-spacing:-.01em}
+.card p{font-size:12.5px;color:var(--muted);line-height:1.7}
+
+/* DIFFERENCE */
+#difference{padding:80px 0}
+.diff-box{background:var(--white);border:1px solid var(--border);border-radius:16px;overflow:hidden;display:grid;grid-template-columns:280px 1fr;box-shadow:var(--sh);margin-top:32px}
+.diff-left{padding:26px;border-right:1px solid var(--border)}
+.diff-tabs{display:flex;margin-bottom:22px;border:1px solid var(--border);border-radius:8px;overflow:hidden;background:var(--bg)}
+.diff-tab{flex:1;padding:8px 16px;font-size:12.5px;font-weight:600;cursor:pointer;border:none;background:transparent;color:var(--muted);font-family:var(--sans);transition:background .2s,color .2s}
+.diff-tab.active{background:var(--ink);color:white}
+.co-row{display:flex;align-items:center;gap:11px;background:var(--bg);border-radius:9px;padding:12px 14px;margin-bottom:18px;border:1px solid var(--border)}
+.co-av{width:34px;height:34px;border-radius:7px;background:var(--ink);display:flex;align-items:center;justify-content:center;color:white;font-size:11px;font-weight:700;flex-shrink:0}
+.co-name{font-size:13px;font-weight:600;letter-spacing:-.01em}
+.co-addr{font-size:11px;color:var(--muted)}
+.mrow{display:flex;align-items:center;justify-content:space-between;padding:10px 0;border-bottom:1px solid var(--border);font-size:12.5px;font-weight:500}
+.mrow:last-child{border-bottom:none}
+.mbadge{padding:3px 10px;border-radius:100px;font-size:11px;font-weight:700;transition:all .4s cubic-bezier(.16,1,.3,1)}
+.b-red{background:var(--red-soft);color:var(--red)}.b-green{background:var(--green-soft);color:var(--green)}
+.diff-right{position:relative;min-height:320px;overflow:hidden}
+.map-bg{position:absolute;inset:0;background:#c5d4bc;background-image:linear-gradient(rgba(140,165,130,.38) 1px,transparent 1px),linear-gradient(90deg,rgba(140,165,130,.38) 1px,transparent 1px);background-size:36px 36px}
+.map-bg::before{content:'';position:absolute;top:50%;left:0;right:0;height:7px;background:rgba(255,255,255,.45);transform:translateY(-50%)}
+.map-bg::after{content:'';position:absolute;left:37%;top:0;bottom:0;width:5px;background:rgba(255,255,255,.35)}
+.map-dots-c{position:absolute;inset:0;display:flex;align-items:center;justify-content:center}
+.dots-cluster{display:grid;grid-template-columns:repeat(11,27px);grid-template-rows:repeat(9,27px);gap:3px}
+.dot{width:22px;height:22px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:8px;font-weight:800;color:white;box-shadow:0 1px 3px rgba(0,0,0,.22);transition:all .5s cubic-bezier(.16,1,.3,1)}
+.dot.red{background:var(--red)}.dot.green{background:var(--green)}.dot.empty{background:transparent;box-shadow:none}
+
+/* HOW */
+#how{padding:80px 0}
+.step-row{border:1px solid var(--border);border-radius:11px;background:var(--white);padding:20px 24px;display:flex;align-items:flex-start;gap:18px;transition:border-color .25s,box-shadow .25s,transform .25s;margin-bottom:10px}
+.step-row:hover,.step-row.active{border-color:var(--blue);box-shadow:0 0 0 3px rgba(29,78,216,.07),var(--sh-sm);transform:translateX(4px)}
+.step-tag{font-size:10px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.1em;background:var(--bg);border:1px solid var(--border);border-radius:6px;padding:3px 8px;white-space:nowrap;flex-shrink:0;margin-top:3px}
+.step-row.active .step-tag{background:var(--blue-soft);border-color:rgba(29,78,216,.3);color:var(--blue)}
+.step-row h4{font-size:13.5px;font-weight:600;margin-bottom:4px;letter-spacing:-.01em}
+.step-row p{font-size:12.5px;color:var(--muted)}
+.ai-note{text-align:center;padding:16px 20px;font-size:12.5px;color:var(--muted);background:var(--white);border:1px dashed var(--border);border-radius:11px;margin-top:10px}
+
+/* TESTIMONIALS */
+#testimonials{padding:72px 0}
+.testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:32px}
+.testi-card{background:var(--white);border:1px solid var(--border);border-radius:14px;padding:24px;transition:transform .3s cubic-bezier(.16,1,.3,1),box-shadow .3s}
+.testi-card:hover{transform:translateY(-4px);box-shadow:var(--sh)}
+.stars{color:var(--gold);font-size:12px;letter-spacing:2px;margin-bottom:14px}
+.testi-text{font-family:var(--serif);font-size:15px;color:var(--ink2);line-height:1.7;margin-bottom:18px;font-style:italic}
+.testi-author{display:flex;align-items:center;gap:10px}
+.testi-av{width:32px;height:32px;border-radius:50%;background:var(--bg);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:var(--muted);flex-shrink:0}
+.testi-name{font-size:12.5px;font-weight:600}
+.testi-biz{font-size:11px;color:var(--muted)}
+
+/* FAQ */
+#faq{padding:80px 0}
+.faq-list{background:var(--white);border:1px solid var(--border);border-radius:14px;overflow:hidden;box-shadow:var(--sh-sm);margin-top:32px}
+.faq-item{border-bottom:1px solid var(--border)}
+.faq-item:last-child{border-bottom:none}
+.faq-q{width:100%;text-align:left;background:none;border:none;cursor:pointer;padding:20px 26px;font-size:14px;font-weight:500;letter-spacing:-.01em;display:flex;align-items:center;justify-content:space-between;color:var(--ink);font-family:var(--sans);transition:background .15s;gap:16px}
+.faq-q:hover{background:var(--bg)}
+.faq-plus{width:24px;height:24px;border-radius:6px;border:1px solid var(--border);background:var(--bg);display:flex;align-items:center;justify-content:center;font-size:16px;color:var(--muted);flex-shrink:0;transition:transform .3s,background .2s,border-color .2s;line-height:1}
+.faq-q.open .faq-plus{transform:rotate(45deg);background:var(--ink);border-color:var(--ink);color:white}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .35s ease}
+.faq-a-inner{padding:0 26px 20px;font-size:13px;color:var(--muted);line-height:1.78}
+.faq-a.open{max-height:240px}
+
+/* PRICING */
+#pricing{padding:80px 0}
+.pricing-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:36px;align-items:start}
+.pricing-card{background:var(--white);border:1px solid var(--border);border-radius:16px;padding:26px;position:relative;transition:transform .3s cubic-bezier(.16,1,.3,1),box-shadow .3s}
+.pricing-card:hover{transform:translateY(-5px);box-shadow:var(--sh-lg)}
+.pricing-card.featured{border-color:var(--blue);box-shadow:0 0 0 2px rgba(29,78,216,.12),var(--sh)}
+.pricing-card.featured:hover{box-shadow:0 0 0 2px rgba(29,78,216,.2),var(--sh-lg)}
+.best-badge{position:absolute;top:-11px;left:50%;transform:translateX(-50%);background:var(--blue);color:white;font-size:9.5px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;padding:4px 12px;border-radius:100px;white-space:nowrap;box-shadow:0 2px 10px rgba(29,78,216,.38)}
+.plan-name{font-size:10.5px;color:var(--muted);font-weight:600;text-transform:uppercase;letter-spacing:.1em;margin-bottom:8px}
+.plan-price{font-family:var(--serif);font-size:34px;font-weight:600;letter-spacing:-.03em;line-height:1}
+.plan-per{font-family:var(--sans);font-size:13px;font-weight:400;color:var(--muted)}
+.plan-cad{font-size:12px;color:var(--muted);margin:6px 0 16px}
+.plan-div{height:1px;background:var(--border);margin:16px 0}
+.plan-vis-t{font-size:11.5px;color:var(--muted);text-decoration:line-through;margin-bottom:4px}
+.plan-vis{font-size:12.5px;font-weight:600;color:var(--ink2);margin-bottom:18px}
+.plan-features{list-style:none;margin-bottom:22px}
+.plan-features li{font-size:12.5px;color:var(--muted);padding:5px 0;display:flex;align-items:flex-start;gap:9px}
+.ck{color:var(--green);font-weight:800;flex-shrink:0;font-size:12px}
+.plan-features li.hi{color:var(--ink2);font-weight:600}
+.btn-cta{display:block;width:100%;background:var(--ink);color:white;border:none;border-radius:9px;padding:12px;font-size:13px;font-weight:700;cursor:pointer;text-align:center;text-decoration:none;font-family:var(--sans);letter-spacing:.01em;transition:background .2s,transform .15s,box-shadow .15s;margin-bottom:10px}
+.btn-cta:hover{background:var(--blue);transform:translateY(-1px);box-shadow:0 4px 16px rgba(29,78,216,.3)}
+.pricing-card.featured .btn-cta{background:var(--blue)}
+.pricing-card.featured .btn-cta:hover{background:#1e40af}
+.btn-call{display:flex;align-items:center;justify-content:center;gap:6px;font-size:12px;color:var(--muted);cursor:pointer;background:none;border:none;width:100%;font-family:var(--sans);padding:4px;transition:color .2s}
+.btn-call:hover{color:var(--ink)}
+
+/* FOOTER */
+footer{border-top:1px solid var(--border);padding:52px 48px 28px;max-width:920px;margin:0 auto}
+.footer-top{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:40px;gap:40px}
+.footer-brand{max-width:280px}
+.footer-logo{display:flex;align-items:center;gap:9px;font-weight:700;font-size:13.5px;margin-bottom:14px}
+.footer-tagline{font-family:var(--serif);font-size:28px;font-weight:600;line-height:1.18;letter-spacing:-.025em;margin-bottom:8px}
+.footer-sub{font-size:12px;color:var(--muted)}
+.footer-col h4{font-size:10.5px;color:var(--muted);text-transform:uppercase;letter-spacing:.1em;font-weight:600;margin-bottom:12px}
+.footer-col a{display:block;font-size:13px;color:var(--muted);text-decoration:none;margin-bottom:8px;transition:color .2s}
+.footer-col a:hover{color:var(--ink)}
+.footer-bottom{border-top:1px solid var(--border);padding-top:20px;font-size:11.5px;color:var(--muted);display:flex;justify-content:space-between}
+
+@media(max-width:720px){
+  nav{padding:0 20px}.nav-links{display:none}
+  .wrap{padding:0 20px}
+  #hero{padding:48px 0 40px}
+  .cards-row,.pricing-grid,.testi-grid{grid-template-columns:1fr}
+  .diff-box{grid-template-columns:1fr}
+  .diff-right{min-height:240px}
+  .stats-bar{flex-direction:column;max-width:100%}
+  .stat-item{border-right:none;border-bottom:1px solid var(--border)}
+  .stat-item:last-child{border-bottom:none}
+  footer{padding:36px 20px 20px}
+  .footer-top{flex-direction:column;gap:28px}
+  .footer-bottom{flex-direction:column;gap:6px;text-align:center}
+}
+</style>
+</head>
+<body>
+
+<nav id="mainNav">
+  <a href="#" class="nav-logo">
+    <div class="logo-icon">
+      <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+    </div>
+    TD Local SEO
+  </a>
+  <div class="nav-links">
+    <a href="#value">Before / After</a>
+    <a href="#difference">Process</a>
+    <a href="#testimonials">Testimonials</a>
+    <a href="#faq">Questions</a>
+    <a href="#pricing">Pricing</a>
+    <a href="tel:3862066786" class="btn-nav">386-206-6786</a>
+  </div>
+</nav>
+
+<section id="hero">
+  <div class="wrap">
+    <div class="hero-badge reveal"><div class="badge-dot"></div>Currently ranking 3 new businesses this month</div>
+    <h1 class="hero-h1 reveal d1">Top 3 on Google<br>within 90 Days,<br><em>Guaranteed.</em></h1>
+    <p class="hero-sub reveal d2"><strong>78% of all searches go to the top 3 on Google Maps.</strong> If you're not there, you're essentially invisible to customers ready to buy.</p>
+    <div class="stats-bar reveal d3">
+      <div class="stat-item"><div class="stat-num">3+</div><div class="stat-label">Satisfied Clients</div></div>
+      <div class="stat-item"><div class="stat-num">2+</div><div class="stat-label">Years Experience</div></div>
+      <div class="stat-item"><div class="stat-num">90</div><div class="stat-label">Day Guarantee</div></div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section id="value">
+  <div class="wrap">
+    <div class="sec-label reveal"><div class="sl-dot"></div> The Actual Value</div>
+    <h2 class="sec-h reveal d1"><em>But,</em> Is This Even Worth It?</h2>
+    <div class="cards-row">
+      <div class="card reveal d1"><div class="card-ico ico-b">&#128065;&#65039;</div><h3>Visibility</h3><p>78% of all leads searching for your services go straight to the top 3 results. If you're not there, competitors are taking your customers.</p></div>
+      <div class="card reveal d2"><div class="card-ico ico-g">&#127358;</div><h3>No Ad Budget Needed</h3><p>No pay-per-click, no bloated budgets. We win through organic Google Maps ranking — those clicks are yours forever at no extra cost.</p></div>
+      <div class="card reveal d3"><div class="card-ico ico-a">&#128200;</div><h3>Long Term Strategy</h3><p>Once you're in the top 3, you stay there for years without additional monthly cost. It's a compounding asset that keeps delivering.</p></div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section id="difference">
+  <div class="wrap">
+    <div class="sec-label reveal" style="justify-content:center"><div class="sl-dot"></div> Before / After</div>
+    <h2 class="sec-h reveal d1" style="text-align:center">The <em>Difference</em></h2>
+    <div class="diff-box reveal d2">
+      <div class="diff-left">
+        <div class="diff-tabs">
+          <button class="diff-tab active" data-i="0">Before</button>
+          <button class="diff-tab" data-i="1">After</button>
+        </div>
+        <div class="co-row">
+          <div class="co-av">YC</div>
+          <div><div class="co-name">Your Company</div><div class="co-addr">Example Address 12, DKR NYC</div></div>
+        </div>
+        <div class="mrow"><span>Average Ranking</span><span class="mbadge b-red" id="m1">36</span></div>
+        <div class="mrow"><span>Impressions</span><span class="mbadge b-red" id="m2">75</span></div>
+        <div class="mrow"><span>Clicks per Month</span><span class="mbadge b-red" id="m3">2</span></div>
+        <div class="mrow"><span>Customers per Month</span><span class="mbadge b-red" id="m4">12</span></div>
+      </div>
+      <div class="diff-right">
+        <div class="map-bg"></div>
+        <div class="map-dots-c"><div class="dots-cluster" id="dotsCluster"></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section id="how">
+  <div class="wrap">
+    <div class="sec-label reveal" style="justify-content:center"><div class="sl-dot"></div> How Does It Work?</div>
+    <h2 class="sec-h reveal d1" style="text-align:center">It's Pretty <em>easy.</em></h2>
+    <div style="margin-top:32px">
+      <div class="step-row reveal d1">
+        <div class="step-tag">01 &middot; Free Analysis</div>
+        <div><h4>Choose a plan &amp; fill out the form</h4><p>Select a package that fits your goals. We'll review your ranking and identify exactly what's holding you back.</p></div>
+      </div>
+      <div class="step-row reveal d2">
+        <div class="step-tag">02 &middot; Onboarding</div>
+        <div><h4>Secure access &amp; setup</h4><p>We send detailed instructions showing how to safely grant us access to your Google Business Profile — no passwords shared, ever.</p></div>
+      </div>
+      <div class="step-row active reveal d3">
+        <div class="step-tag">03 &middot; Execution</div>
+        <div><h4>We work. You profit.</h4><p>We handle every step of the optimization process — citations, reviews, on-page signals — filling your calendar for weeks ahead.</p></div>
+      </div>
+      <div class="ai-note reveal d4">04. What Works? — We track real data to find what actually moves the needle, then double down on it.</div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section id="testimonials">
+  <div class="wrap">
+    <div class="sec-label reveal" style="justify-content:center"><div class="sl-dot"></div> Client Results</div>
+    <h2 class="sec-h reveal d1" style="text-align:center">What Clients <em>Say</em></h2>
+    <div class="testi-grid">
+      <div class="testi-card reveal d1">
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="testi-text">"Within 6 weeks we went from page 4 to position 2 on Google Maps. Calls tripled. Best investment I made for my business."</p>
+        <div class="testi-author"><div class="testi-av">MR</div><div><div class="testi-name">Mike R.</div><div class="testi-biz">HVAC Contractor, Denver</div></div></div>
+      </div>
+      <div class="testi-card reveal d2">
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="testi-text">"Skeptical at first but the results don't lie. Top 3 in 74 days, exactly as promised. My schedule is booked 3 weeks out."</p>
+        <div class="testi-author"><div class="testi-av">SL</div><div><div class="testi-name">Sarah L.</div><div class="testi-biz">Family Dentistry, Austin</div></div></div>
+      </div>
+      <div class="testi-card reveal d3">
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="testi-text">"We were invisible online for years. Three months later we're the #1 plumber in our area on Google Maps. Worth every penny."</p>
+        <div class="testi-author"><div class="testi-av">DJ</div><div><div class="testi-name">David J.</div><div class="testi-biz">Plumbing Services, Phoenix</div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section id="faq">
+  <div class="wrap">
+    <div class="sec-label reveal" style="justify-content:center"><div class="sl-dot"></div> FAQ</div>
+    <h2 class="sec-h reveal d1" style="text-align:center">Frequently Asked <em>Questions</em></h2>
+    <div class="faq-list reveal d2">
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">What is the difference between SEO and Google Ads?<span class="faq-plus">+</span></button>
+        <div class="faq-a"><div class="faq-a-inner">SEO improves your organic ranking in Google Maps and search — a long-term strategy that keeps working without ongoing ad spend. Google Ads stop working the moment you stop paying. We focus on SEO so you get lasting results that build real business value over time.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">Which companies do you work with?<span class="faq-plus">+</span></button>
+        <div class="faq-a"><div class="faq-a-inner">We work with local service businesses of all kinds — contractors, dentists, plumbers, lawyers, restaurants, and more. If your customers search for you on Google Maps, we can help you dominate that space.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">How much time will I need to invest?<span class="faq-plus">+</span></button>
+        <div class="faq-a"><div class="faq-a-inner">Very little. After a brief onboarding call and granting us secure access to your Google Business Profile, we handle everything. Most clients spend less than 30 minutes per month reviewing progress reports.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">What are the contract terms?<span class="faq-plus">+</span></button>
+        <div class="faq-a"><div class="faq-a-inner">We offer flexible monthly plans with no long-term contracts required. Our quarterly package comes with a money-back guarantee — if you're not in the top 3 within 90 days, you don't pay.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">How can we get started?<span class="faq-plus">+</span></button>
+        <div class="faq-a"><div class="faq-a-inner">Choose a plan below and click "Get Started." We'll reach out within one business day to schedule your free analysis call and kick off onboarding. The sooner you start, the sooner you're ranking.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section id="pricing">
+  <div class="wrap">
+    <div class="sec-label reveal" style="justify-content:center"><div class="sl-dot"></div> For Leads</div>
+    <h2 class="sec-h reveal d1" style="text-align:center">Get <em>more</em> Clients</h2>
+    <div class="pricing-grid">
+      <div class="pricing-card reveal d1">
+        <div class="plan-name">Minimum</div>
+        <div class="plan-price">$399<span class="plan-per"> / mo</span></div>
+        <div class="plan-cad">Top 3 on Google within 60 days.</div>
+        <div class="plan-div"></div>
+        <div class="plan-vis-t">Visible on 55% of search results</div>
+        <div class="plan-vis">Ranking for 1 main search term</div>
+        <ul class="plan-features">
+          <li><span class="ck">&#10003;</span> Full Competitor Analysis</li>
+          <li><span class="ck">&#10003;</span> Updates Every Two Weeks</li>
+          <li><span class="ck">&#10003;</span> Unlimited Website Optimization</li>
+          <li><span class="ck">&#10003;</span> High Quality Backlinks</li>
+          <li><span class="ck">&#10003;</span> No Money-Back Guarantee</li>
+        </ul>
+        <a href="#" class="btn-cta">Get Started</a>
+        <button class="btn-call">&#128222; Call</button>
+      </div>
+      <div class="pricing-card reveal d2">
+        <div class="plan-name">Standard</div>
+        <div class="plan-price">$528<span class="plan-per"> / mo</span></div>
+        <div class="plan-cad">Top 3 on Google within 90 days.</div>
+        <div class="plan-div"></div>
+        <div class="plan-vis-t">Visible on 75% of search results</div>
+        <div class="plan-vis">Ranking for main search term</div>
+        <ul class="plan-features">
+          <li><span class="ck">&#10003;</span> Full Competitor Analysis</li>
+          <li><span class="ck">&#10003;</span> Updates Every Two Weeks</li>
+          <li><span class="ck">&#10003;</span> Full Website Optimization</li>
+          <li><span class="ck">&#10003;</span> High Quality Backlinks</li>
+          <li><span class="ck">&#10003;</span> Money-Back Guarantee</li>
+        </ul>
+        <a href="#" class="btn-cta">Get Started</a>
+        <button class="btn-call">&#128222; Call</button>
+      </div>
+      <div class="pricing-card featured reveal d3">
+        <div class="best-badge">BEST VALUE</div>
+        <div class="plan-name">Quarterly</div>
+        <div class="plan-price">$1,328<span class="plan-per"> / qtr</span></div>
+        <div class="plan-cad">Top 3 in 90 days &mdash; or you don't pay.</div>
+        <div class="plan-div"></div>
+        <div class="plan-vis-t">Visible on 75%+ of search results</div>
+        <div class="plan-vis">Ranking for top search terms</div>
+        <ul class="plan-features">
+          <li class="hi"><span class="ck">&#10003;</span> Full Competitor Analysis</li>
+          <li class="hi"><span class="ck">&#10003;</span> Weekly Updates</li>
+          <li class="hi"><span class="ck">&#10003;</span> Money-Back Guarantee</li>
+          <li class="hi"><span class="ck">&#10003;</span> Full Website Optimization</li>
+          <li class="hi"><span class="ck">&#10003;</span> Premium Backlink Building</li>
+        </ul>
+        <a href="#" class="btn-cta">Get Started</a>
+        <button class="btn-call">&#128222; Call</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <div class="footer-logo">
+        <div class="logo-icon"><svg viewBox="0 0 24 24" style="width:13px;height:13px;fill:white"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></div>
+        TD Local SEO
+      </div>
+      <div class="footer-tagline">Dominate Your<br>Local Market.</div>
+      <div class="footer-sub" style="margin-top:10px">Built for local businesses who want to grow.</div>
+    </div>
+    <div class="footer-col">
+      <h4>Legal</h4>
+      <a href="#">Terms of Service</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Refund Policy</a>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <a href="#value">Why Us</a>
+      <a href="#pricing">Pricing</a>
+      <a href="mailto:contact@tdlocalseo.com">Contact</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>&copy; 2026 TD Local SEO. All rights reserved.</span>
+    <span>contact@tdlocalseo.com</span>
+  </div>
+</footer>
+
+<script>
+window.addEventListener('scroll',()=>{document.getElementById('mainNav').classList.toggle('scrolled',scrollY>8)});
+const obs=new IntersectionObserver(e=>{e.forEach(el=>{if(el.isIntersecting){el.target.classList.add('visible');obs.unobserve(el.target)}})},{threshold:.1});
+document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+function toggleFaq(btn){const ans=btn.nextElementSibling,open=btn.classList.contains('open');document.querySelectorAll('.faq-q').forEach(b=>{b.classList.remove('open');b.nextElementSibling.classList.remove('open')});if(!open){btn.classList.add('open');ans.classList.add('open')}}
+document.querySelectorAll('.diff-tab').forEach(tab=>{tab.addEventListener('click',()=>{document.querySelectorAll('.diff-tab').forEach(t=>t.classList.remove('active'));tab.classList.add('active');applyState(tab.dataset.i==='1')})});
+function applyState(isAfter){const ids=['m1','m2','m3','m4'];const av=['#2','4.2k','284','47'],bv=['36','75','2','12'];ids.forEach((id,i)=>{const el=document.getElementById(id);el.style.opacity='0';el.style.transform='scale(.8)';setTimeout(()=>{el.textContent=isAfter?av[i]:bv[i];el.className='mbadge '+(isAfter?'b-green':'b-red');el.style.transition='all .4s cubic-bezier(.16,1,.3,1)';el.style.opacity='1';el.style.transform='scale(1)'},140+i*40)});renderDots(isAfter)}
+function renderDots(isAfter){const cl=document.getElementById('dotsCluster');cl.innerHTML='';const cols=11,rows=9,cx=5,cy=4,radius=4.3;for(let r=0;r<rows;r++){for(let c=0;c<cols;c++){const dot=document.createElement('div');const dist=Math.sqrt((c-cx)**2+(r-cy)**2);if(dist<=radius){const center=r===cy&&c===cx;dot.className='dot '+(isAfter?'green':'red');if(center){dot.style.background=isAfter?'#166534':'#991b1b';dot.style.width='27px';dot.style.height='27px';dot.textContent='\u2605';dot.style.fontSize='11px'}else{dot.textContent=isAfter?'\u2713':'\u2717'}dot.style.transition='all .5s cubic-bezier(.16,1,.3,1) '+(Math.random()*.35).toFixed(2)+'s'}else{dot.className='dot empty'}cl.appendChild(dot)}}}
+renderDots(false);
+</script>
+</body>
+</html>
