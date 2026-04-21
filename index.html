@@ -12,6 +12,16 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://tdlocalseo.com/">
 <link rel="canonical" href="https://tdlocalseo.com/">
+<!-- Google Search Console Verification -->
+<meta name="google-site-verification" content="PENDING_VERIFICATION_CODE">
+<!-- Google Analytics 4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXXXXX');
+</script>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Epilogue:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <!-- Leaflet CSS for interactive map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
@@ -595,6 +605,35 @@ footer{border-top:1px solid var(--border);padding:52px 48px 28px;max-width:920px
   </div>
 </section>
 
+<section id="contact" style="background:var(--white);padding:80px 0;border-top:1px solid var(--border)">
+  <div class="wrap">
+    <div class="sec-label reveal" style="justify-content:center"><div class="sl-dot"></div> Get Started</div>
+    <h2 class="sec-h reveal d1" style="text-align:center">Ready to Dominate <em>Local Search?</em></h2>
+    <div style="max-width:520px;margin:40px auto;background:var(--white);border:1px solid var(--border);border-radius:14px;padding:32px;box-shadow:var(--sh)">
+      <form id="contactForm" onsubmit="submitForm(event)">
+        <div style="margin-bottom:16px">
+          <label style="display:block;font-size:12px;font-weight:600;margin-bottom:6px;color:var(--muted);text-transform:uppercase">Your Name</label>
+          <input type="text" name="name" required style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:8px;font-family:var(--sans);font-size:14px">
+        </div>
+        <div style="margin-bottom:16px">
+          <label style="display:block;font-size:12px;font-weight:600;margin-bottom:6px;color:var(--muted);text-transform:uppercase">Email</label>
+          <input type="email" name="email" required style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:8px;font-family:var(--sans);font-size:14px">
+        </div>
+        <div style="margin-bottom:16px">
+          <label style="display:block;font-size:12px;font-weight:600;margin-bottom:6px;color:var(--muted);text-transform:uppercase">Phone</label>
+          <input type="tel" name="phone" required style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:8px;font-family:var(--sans);font-size:14px">
+        </div>
+        <div style="margin-bottom:20px">
+          <label style="display:block;font-size:12px;font-weight:600;margin-bottom:6px;color:var(--muted);text-transform:uppercase">Message</label>
+          <textarea name="message" required style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:8px;font-family:var(--sans);font-size:14px;min-height:100px;resize:vertical"></textarea>
+        </div>
+        <button type="submit" class="btn-cta" style="width:100%">Get Free Analysis</button>
+      </form>
+      <div id="formMessage" style="margin-top:16px;text-align:center;display:none;padding:12px;border-radius:8px"></div>
+    </div>
+  </div>
+</section>
+
 <footer>
   <div class="footer-top">
     <div class="footer-brand">
@@ -899,3 +938,52 @@ document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener('click'
 </script>
 </body>
 </html>
+
+<script>
+// Form submission handler
+async function submitForm(e) {
+  e.preventDefault();
+  const form = document.getElementById('contactForm');
+  const messageDiv = document.getElementById('formMessage');
+  const submitBtn = form.querySelector('button[type="submit"]');
+
+  const formData = {
+    name: form.name.value,
+    email: form.email.value,
+    phone: form.phone.value,
+    message: form.message.value
+  };
+
+  try {
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Sending...';
+
+    const response = await fetch('/api/submit-form', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(formData)
+    });
+
+    const result = await response.json();
+
+    if (response.ok) {
+      messageDiv.style.display = 'block';
+      messageDiv.style.background = 'var(--green-soft)';
+      messageDiv.style.color = 'var(--green)';
+      messageDiv.textContent = '✓ Form submitted! We\'ll contact you within 24 hours.';
+      form.reset();
+      submitBtn.textContent = 'Get Free Analysis';
+    } else {
+      throw new Error(result.error || 'Submission failed');
+    }
+  } catch (error) {
+    messageDiv.style.display = 'block';
+    messageDiv.style.background = 'var(--red-soft)';
+    messageDiv.style.color = 'var(--red)';
+    messageDiv.textContent = '✗ Error: ' + error.message;
+    submitBtn.textContent = 'Get Free Analysis';
+  } finally {
+    submitBtn.disabled = false;
+  }
+}
+</script>
