@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+Allow: /blog/
+Sitemap: https://tdlocalseo.com/sitemap.xml
+
+User-agent: Googlebot
+Allow: /
+Allow: /blog/
+Crawl-delay: 0
+
+User-agent: Bingbot
+Allow: /
+Allow: /blog/
