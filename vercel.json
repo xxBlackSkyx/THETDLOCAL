@@ -8,7 +8,7 @@
       "dest": "/blog/index.html"
     },
     {
-      "src": "/blog/(.+)",
+      "src": "/blog/([^/]+)/?$",
       "dest": "/blog/$1.html"
     },
     {
