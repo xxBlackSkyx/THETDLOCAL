@@ -1,15 +1,15 @@
 {
   "version": 2,
-  "buildCommand": "echo 'Static site - no build needed'",
+  "buildCommand": "node build-blog.js",
   "outputDirectory": ".",
   "routes": [
     {
-      "src": "/blog/(.+)",
-      "dest": "/blog/$1.html"
+      "src": "/blog/?$",
+      "dest": "/blog/index.html"
     },
     {
-      "src": "/",
-      "dest": "/index.html"
+      "src": "/blog/(.+)",
+      "dest": "/blog/$1.html"
     },
     {
       "src": "/robots.txt",
@@ -18,6 +18,10 @@
     {
       "src": "/sitemap.xml",
       "dest": "/sitemap.xml"
+    },
+    {
+      "src": "/",
+      "dest": "/index.html"
     }
   ]
 }

@@ -1,0 +1,200 @@
+#!/usr/bin/env node
+/**
+ * Blog Build Script: Markdown → HTML
+ * Runs during Vercel deploy via vercel.json buildCommand
+ * 
+ * Usage: node build-blog.js
+ * 
+ * Reads .md files from blog/posts/ with YAML front matter
+ * Renders to blog/*.html + updates blog/index.html
+ */
+
+const fs = require('fs');
+const path = require('path');
+
+// Simple markdown to HTML converter (no external deps)
+function markdownToHtml(md) {
+  let html = md
+    // Headers
+    .replace(/^### (.*?)$/gm, '<h3>$1</h3>')
+    .replace(/^## (.*?)$/gm, '<h2>$1</h2>')
+    .replace(/^# (.*?)$/gm, '<h1>$1</h1>')
+    // Bold/italic
+    .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+    .replace(/\*(.*?)\*/g, '<em>$1</em>')
+    // Links
+    .replace(/\[(.*?)\]\((.*?)\)/g, '<a href="$2">$1</a>')
+    // Line breaks → paragraphs
+    .replace(/\n\n+/g, '</p><p>')
+    .replace(/^(.+)$/gm, (match) => {
+      if (!match.match(/<[h|a|strong|em]/)) return `<p>${match}</p>`;
+      return match;
+    });
+  
+  return html;
+}
+
+// Parse YAML front matter
+function parseFrontMatter(content) {
+  const match = content.match(/^---\n([\s\S]*?)\n---\n([\s\S]*)$/);
+  if (!match) return null;
+  
+  const yaml = match[1];
+  const body = match[2];
+  
+  const meta = {};
+  yaml.split('\n').forEach(line => {
+    const [key, ...valueParts] = line.split(':');
+    if (key) {
+      meta[key.trim()] = valueParts.join(':').trim().replace(/^["']|["']$/g, '');
+    }
+  });
+  
+  return { meta, body };
+}
+
+// Read all posts
+const postsDir = path.join(__dirname, 'blog', 'posts');
+const posts = [];
+
+if (fs.existsSync(postsDir)) {
+  const files = fs.readdirSync(postsDir).filter(f => f.endsWith('.md'));
+  
+  files.forEach(file => {
+    const content = fs.readFileSync(path.join(postsDir, file), 'utf8');
+    const parsed = parseFrontMatter(content);
+    
+    if (parsed) {
+      const slug = parsed.meta.slug || file.replace(/\.md$/, '');
+      const html = markdownToHtml(parsed.body);
+      
+      posts.push({
+        slug,
+        title: parsed.meta.title || slug,
+        description: parsed.meta.description || '',
+        date: parsed.meta.date || new Date().toISOString().split('T')[0],
+        author: parsed.meta.author || 'Tyler Davis',
+        category: parsed.meta.category || 'Local SEO',
+        html
+      });
+    }
+  });
+}
+
+// Sort by date (newest first)
+posts.sort((a, b) => new Date(b.date) - new Date(a.date));
+
+// Generate HTML files
+const blogDir = path.join(__dirname, 'blog');
+posts.forEach(post => {
+  const htmlContent = `<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>${post.title} | TD Local SEO</title>
+    <meta name="description" content="${post.description}">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.tdlocalseo.com/blog/${post.slug}/">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: #333; background: #f8f9fa; }
+        header { background: #fff; border-bottom: 1px solid #ddd; padding: 1rem 0; }
+        nav { max-width: 1200px; margin: 0 auto; padding: 0 2rem; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-weight: bold; font-size: 1.5rem; color: #0066cc; text-decoration: none; }
+        a { color: #0066cc; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .container { max-width: 800px; margin: 2rem auto; padding: 0 2rem; }
+        h1 { margin: 1.5rem 0 0.5rem; }
+        h2 { margin: 1.5rem 0 0.5rem; }
+        h3 { margin: 1rem 0 0.5rem; }
+        p { margin: 1rem 0; }
+        .meta { color: #666; font-size: 0.9rem; margin: 1rem 0 2rem; }
+        .back-link { margin: 2rem 0; }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/" class="logo">TD Local SEO</a>
+            <a href="/blog/">← Back to Blog</a>
+        </nav>
+    </header>
+    <main class="container">
+        <h1>${post.title}</h1>
+        <div class="meta">
+            <strong>${post.date}</strong> | ${post.author} | ${post.category}
+        </div>
+        <div class="content">
+            ${post.html}
+        </div>
+        <div class="back-link">
+            <a href="/blog/">← Back to all posts</a>
+        </div>
+    </main>
+</body>
+</html>`;
+  
+  fs.writeFileSync(path.join(blogDir, `${post.slug}.html`), htmlContent);
+  console.log(`✓ Generated: /blog/${post.slug}.html`);
+});
+
+// Generate blog index
+const indexHtml = `<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local SEO Blog | TD Local SEO</title>
+    <meta name="description" content="Local SEO tips, strategies, and case studies for small businesses in Palm Coast, Flagler County, and beyond.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.tdlocalseo.com/blog/">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: #333; background: #f8f9fa; }
+        header { background: #fff; border-bottom: 1px solid #ddd; padding: 1rem 0; }
+        nav { max-width: 1200px; margin: 0 auto; padding: 0 2rem; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-weight: bold; font-size: 1.5rem; color: #0066cc; text-decoration: none; }
+        a { color: #0066cc; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .container { max-width: 1000px; margin: 2rem auto; padding: 0 2rem; }
+        h1 { margin-bottom: 1rem; color: #222; }
+        .posts { display: grid; gap: 2rem; }
+        .post { background: #fff; padding: 2rem; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: transform 0.2s; }
+        .post:hover { transform: translateY(-2px); box-shadow: 0 4px 8px rgba(0,0,0,0.15); }
+        .post-title { font-size: 1.5rem; margin-bottom: 0.5rem; }
+        .post-meta { color: #666; font-size: 0.9rem; margin-bottom: 1rem; }
+        .post-desc { color: #555; margin-bottom: 1rem; }
+        .read-more { display: inline-block; margin-top: 1rem; font-weight: 600; }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/" class="logo">TD Local SEO</a>
+            <a href="/">← Back Home</a>
+        </nav>
+    </header>
+    <main class="container">
+        <h1>📚 Local SEO Blog</h1>
+        <p style="color: #666; margin-bottom: 2rem;">Tips, strategies, and case studies for small business owners in Palm Coast, Flagler County, and beyond.</p>
+        
+        <div class="posts">
+            ${posts.map(post => `
+            <div class="post">
+                <h2 class="post-title"><a href="/blog/${post.slug}/">${post.title}</a></h2>
+                <div class="post-meta">${post.date} | ${post.category}</div>
+                <p class="post-desc">${post.description}</p>
+                <a href="/blog/${post.slug}/" class="read-more">Read More →</a>
+            </div>
+            `).join('')}
+        </div>
+
+        ${posts.length === 0 ? '<p style="color: #999; margin: 2rem 0;">More posts coming soon!</p>' : ''}
+    </main>
+</body>
+</html>`;
+
+fs.writeFileSync(path.join(blogDir, 'index.html'), indexHtml);
+console.log(`✓ Updated: /blog/index.html with ${posts.length} posts`);
+console.log('\n✅ Blog build complete!');
