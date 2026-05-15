@@ -197,4 +197,27 @@ const indexHtml = `<!DOCTYPE html>
 
 fs.writeFileSync(path.join(blogDir, 'index.html'), indexHtml);
 console.log(`✓ Updated: /blog/index.html with ${posts.length} posts`);
+
+// Generate blog/sitemap.xml
+const sitemapUrls = posts.map(post => `
+  <url>
+    <loc>https://www.tdlocalseo.com/blog/${post.slug}/</loc>
+    <lastmod>${post.date}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>`).join('');
+
+const sitemapXml = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://www.tdlocalseo.com/blog/</loc>
+    <lastmod>${new Date().toISOString().split('T')[0]}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>${sitemapUrls}
+</urlset>`;
+
+fs.writeFileSync(path.join(blogDir, 'sitemap.xml'), sitemapXml);
+console.log(`✓ Generated: /blog/sitemap.xml with ${posts.length} posts`);
+
 console.log('\n✅ Blog build complete!');
