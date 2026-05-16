@@ -35,7 +35,7 @@ This growth creates two dynamics that make local SEO critical:
 
 Local SEO levels the playing field. A small, well-optimized Flagler County business can outrank a larger competitor that neglects their online presence.
 
-## Key Local SEO Ranking Factors
+## What Are the Top Local SEO Ranking Factors in 2026?
 
 Google uses a complex algorithm to determine which businesses appear in local search results. While the exact formula is proprietary, research and testing have identified the most important factors:
 
@@ -89,7 +89,7 @@ Since GBP is the #1 ranking factor, let's dive deeper into optimization:
 
 **Q&A:** Pre-populate the Q&A section with common customer questions and detailed answers.
 
-## Building Citations in Flagler County
+## What Is Citation Building and Why Does It Matter?
 
 Start with the major directories and work your way down:
 
