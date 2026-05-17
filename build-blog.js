@@ -221,3 +221,33 @@ fs.writeFileSync(path.join(blogDir, 'sitemap.xml'), sitemapXml);
 console.log(`✓ Generated: /blog/sitemap.xml with ${posts.length} posts`);
 
 console.log('\n✅ Blog build complete!');
+
+// Generate root sitemap.xml (replaces static file — www canonical URLs)
+const today = new Date().toISOString().split('T')[0];
+const staticPages = [
+  { loc: 'https://www.tdlocalseo.com/', lastmod: today, changefreq: 'weekly', priority: '1.0' },
+  { loc: 'https://www.tdlocalseo.com/blog/', lastmod: today, changefreq: 'daily', priority: '0.9' },
+  { loc: 'https://www.tdlocalseo.com/about', lastmod: today, changefreq: 'monthly', priority: '0.7' },
+];
+const staticEntries = staticPages.map(p => `
+  <url>
+    <loc>${p.loc}</loc>
+    <lastmod>${p.lastmod}</lastmod>
+    <changefreq>${p.changefreq}</changefreq>
+    <priority>${p.priority}</priority>
+  </url>`).join('');
+
+const blogEntries = posts.map(post => `
+  <url>
+    <loc>https://www.tdlocalseo.com/blog/${post.slug}/</loc>
+    <lastmod>${post.date}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>`).join('');
+
+const rootSitemap = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${staticEntries}${blogEntries}
+</urlset>`;
+
+fs.writeFileSync(path.join(__dirname, 'sitemap.xml'), rootSitemap);
+console.log(`✓ Regenerated: /sitemap.xml with ${staticPages.length} static + ${posts.length} blog pages`);
