@@ -71,7 +71,7 @@ if (fs.existsSync(postsDir)) {
       posts.push({
         slug,
         title: parsed.meta.title || slug,
-        description: parsed.meta.description || '',
+        description: parsed.meta.description || parsed.meta.meta_description || parsed.meta.excerpt || '',
         date: parsed.meta.date || new Date().toISOString().split('T')[0],
         author: parsed.meta.author || 'Tyler Davis',
         category: parsed.meta.category || 'Local SEO',
@@ -251,3 +251,49 @@ const rootSitemap = `<?xml version="1.0" encoding="UTF-8"?>
 
 fs.writeFileSync(path.join(__dirname, 'sitemap.xml'), rootSitemap);
 console.log(`✓ Regenerated: /sitemap.xml with ${staticPages.length} static + ${posts.length} blog pages`);
+
+// Auto-inject 3 newest posts into homepage blog cards on every build
+const homepagePath = path.join(__dirname, 'index.html');
+if (fs.existsSync(homepagePath) && posts.length > 0) {
+  const recent = [...posts].sort((a, b) => b.date.localeCompare(a.date)).slice(0, 3);
+  const icons  = ['ico-b', 'ico-g', 'ico-a'];
+  const emojis = ['&#128220;', '&#128203;', '&#128506;'];
+  const delays = ['d1', 'd2', 'd3'];
+
+  const cardsHtml = recent.map((post, i) => {
+    const lower = post.title.toLowerCase();
+    const cta = lower.includes('case study') ? 'Read Case Study' :
+                 (lower.includes('guide') || lower.includes('checklist') ||
+                  lower.includes('how to') || lower.includes('how long') ||
+                  lower.includes('how much')) ? 'Read Guide' : 'Read Article';
+    const desc = post.description || '';
+    const descTrim = desc.length > 120 ? desc.slice(0, 120) + '...' : (desc || 'Read the full article on our blog.');
+    return `      <div class="card reveal ${delays[i]}">
+        <div class="card-ico ${icons[i]}">${emojis[i]}</div>
+        <h3>${post.title}</h3>
+        <p>${descTrim}</p>
+        <a href="/blog/${post.slug}/" class="card-link">${cta} &rarr;</a>
+      </div>`;
+  }).join('\n');
+
+  const top4 = [...posts].sort((a, b) => b.date.localeCompare(a.date)).slice(0, 4);
+  const footerLinks = top4.map(p => {
+    const t = p.title.length > 45 ? p.title.slice(0, 45) + '...' : p.title;
+    return `      <a href="/blog/${p.slug}/">${t}</a>`;
+  }).join('\n');
+
+  let homeHtml = fs.readFileSync(homepagePath, 'utf8');
+
+  homeHtml = homeHtml.replace(
+    /<!-- BLOG-CARDS-START -->[\s\S]*?<!-- BLOG-CARDS-END -->/,
+    `<!-- BLOG-CARDS-START -->\n    <div class="cards-row">\n${cardsHtml}\n    </div>\n    <!-- BLOG-CARDS-END -->`
+  );
+
+  homeHtml = homeHtml.replace(
+    /<!-- FOOTER-BLOG-START -->[\s\S]*?<!-- FOOTER-BLOG-END -->/,
+    `<!-- FOOTER-BLOG-START -->\n${footerLinks}\n      <!-- FOOTER-BLOG-END -->`
+  );
+
+  fs.writeFileSync(homepagePath, homeHtml);
+  console.log(`✓ Homepage: injected ${recent.length} blog cards + ${top4.length} footer links`);
+}
