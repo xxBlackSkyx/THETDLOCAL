@@ -33,6 +33,12 @@ nav a:hover{color:#1a6b3c}
 .cta p{margin-bottom:1.5rem;color:#555}
 .btn{display:inline-block;background:#1a6b3c;color:#fff;padding:1rem 2rem;border-radius:6px;text-decoration:none;font-weight:600}
 .btn:hover{background:#145230}
+.testimonials{margin:2rem 0}
+.testimonial{background:#f0f7f2;border-left:4px solid #1a6b3c;border-radius:0 8px 8px 0;padding:2rem;margin-bottom:1.5rem}
+.stars{color:#f5a623;font-size:1.3rem;margin-bottom:.75rem;letter-spacing:2px}
+.quote{font-size:1.1rem;font-style:italic;color:#333;margin-bottom:.75rem;line-height:1.8}
+.attrib{font-size:.9rem;color:#666;margin-bottom:.5rem}
+.result{font-size:.95rem;color:#1a6b3c;font-weight:500}
 footer{background:#1a1a2e;color:#aaa;padding:3rem 0;font-size:.9rem}
 footer .wrap{display:flex;justify-content:space-between;align-items:center}
 footer a{color:#aaa;text-decoration:none}
@@ -80,23 +86,44 @@ footer a:hover{color:#fff}
   ]
 }
 </script>
+
+<!-- Review Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Review",
+  "itemReviewed": {
+    "@type": "Organization",
+    "name": "TD Local SEO",
+    "url": "https://tdlocalseo.com"
+  },
+  "reviewRating": {
+    "@type": "Rating",
+    "ratingValue": "5",
+    "bestRating": "5"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Peter",
+    "jobTitle": "Owner",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Pistol Pete's Mobile Detailing",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Palm Coast",
+        "addressRegion": "FL"
+      }
+    }
+  },
+  "reviewBody": "Tyler got us from page 2 to the top 3 on Google Maps in about 60 days. Our phone rings more now than it has in years. He doesn't overpromise — he just does the work.",
+  "datePublished": "2026-05-01"
+}
+</script>
 </head>
 <body>
 
 <header>
-  <div class="wrap">
-    <nav>
-      <a href="/" class="logo">TD Local SEO</a>
-      <div>
-        <a href="/#services">Services</a>
-        <a href="/#pricing">Pricing</a>
-        <a href="/blog/">Blog</a>
-        <a href="/about/">About</a>
-        <a href="mailto:contact@tdlocalseo.com">Contact</a>
-      </div>
-    </nav>
-  </div>
-</header>
 
 <section class="hero">
   <div class="wrap">
@@ -131,6 +158,16 @@ footer a:hover{color:#fff}
       <div class="stat">
         <div class="stat-num">90</div>
         <div class="stat-label">Day Guarantee</div>
+      </div>
+    </div>
+
+    <h2>What Clients Say</h2>
+    <div class="testimonials">
+      <div class="testimonial">
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="quote">"Tyler got us from page 2 to the top 3 on Google Maps in about 60 days. Our phone rings more now than it has in years. He doesn't overpromise — he just does the work."</p>
+        <p class="attrib">&mdash; Peter, Owner of Pistol Pete's Mobile Detailing, Palm Coast FL</p>
+        <p class="result"><strong>Results:</strong> Rank #12 &#8594; #3 on Google Maps | +40% phone calls | 60 days</p>
       </div>
     </div>
 

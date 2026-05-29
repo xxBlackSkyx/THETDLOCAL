@@ -490,6 +490,20 @@ footer{border-top:1px solid var(--border);padding:52px 48px 28px;max-width:920px
   .footer-top{flex-direction:column;gap:28px}
   .footer-bottom{flex-direction:column;gap:6px;text-align:center}
 }
+
+/* TESTIMONIALS */
+.testimonials-sec{padding:80px 0;background:var(--white);border-top:1px solid var(--border)}
+.testimonials-sec .sec-h{text-align:center;margin-bottom:48px}
+.testimonials-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:24px;max-width:900px;margin:0 auto}
+.testimonial-card{background:var(--bg);border:1px solid var(--border);border-radius:12px;padding:32px;position:relative;transition:transform .2s,box-shadow .2s}
+.testimonial-card:hover{transform:translateY(-2px);box-shadow:var(--sh)}
+.testimonial-card .stars{color:var(--gold);font-size:1.1rem;margin-bottom:16px;letter-spacing:3px}
+.testimonial-card .quote{font-size:15px;font-style:italic;color:var(--ink2);line-height:1.75;margin-bottom:16px}
+.testimonial-card .attrib{font-size:13px;color:var(--muted)}
+.testimonial-card .attrib strong{color:var(--ink);font-weight:600}
+.testimonial-card .results{margin-top:12px;padding-top:12px;border-top:1px solid var(--border);font-size:13px;color:var(--green);font-weight:600}
+.testimonial-card .results span{color:var(--muted);font-weight:400}
+@media(max-width:768px){.testimonials-grid{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -639,6 +653,24 @@ footer{border-top:1px solid var(--border);padding:52px 48px 28px;max-width:920px
       </div>
       <div class="ai-note reveal d4">&#128202; Ongoing: We track your Google Maps ranking data weekly and double down on what moves the needle fastest for your business.</div>
     </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section id="testimonials" class="testimonials-sec">
+  <div class="wrap">
+    <div class="sec-label reveal" style="justify-content:center"><div class="sl-dot"></div> Client Results</div>
+    <h2 class="sec-h reveal d1">What Our Clients <em>Say</em></h2>
+    <div class="testimonials-grid">
+      <div class="testimonial-card reveal d2">
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="quote">"Tyler got us from page 2 to the top 3 on Google Maps in about 60 days. Our phone rings more now than it has in years. He doesn't overpromise — he just does the work."</p>
+        <p class="attrib">&mdash; <strong>Peter</strong>, Owner of Pistol Pete's Mobile Detailing, Palm Coast FL</p>
+        <div class="results">Results: Rank #12 &#8594; #3 on Google Maps <span>|</span> +40% phone calls <span>|</span> 60 days</div>
+      </div>
+    </div>
+    <p style="text-align:center;margin-top:32px;font-size:13px;color:var(--muted)" class="reveal d3">Only results that matter. <a href="/about/" style="color:var(--ink);font-weight:600;text-decoration:underline">See the full story &rarr;</a></p>
   </div>
 </section>
 
