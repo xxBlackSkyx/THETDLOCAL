@@ -4,12 +4,128 @@
   "outputDirectory": ".",
   "routes": [
     {
+      "src": "/blog/gbp-optimization/?$",
+      "headers": {
+        "Location": "/blog/google-business-profile-optimization-palm-coast-fl/"
+      },
+      "status": 301
+    },
+    {
+      "src": "/blog/ranking-factors-2026/?$",
+      "headers": {
+        "Location": "/blog/palm-coast-fl-google-maps-ranking-factors-2026/"
+      },
+      "status": 301
+    },
+    {
+      "src": "/blog/reviews-ranking-strategy-2026/?$",
+      "headers": {
+        "Location": "/blog/how-to-get-more-google-reviews-palm-coast-fl/"
+      },
+      "status": 301
+    },
+    {
+      "src": "/blog/roof-repair-palm-coast-fl/?$",
+      "headers": {
+        "Location": "/blog/local-seo-for-home-service-businesses-flagler-county/"
+      },
+      "status": 301
+    },
+    {
+      "src": "/blog/hvac-repair-palm-coast-fl/?$",
+      "headers": {
+        "Location": "/blog/local-seo-for-home-service-businesses-flagler-county/"
+      },
+      "status": 301
+    },
+    {
+      "src": "/blog/plumbing-seo-florida-contractors/?$",
+      "headers": {
+        "Location": "/blog/local-seo-for-contractors-flagler-county-fl/"
+      },
+      "status": 301
+    },
+    {
+      "src": "/blog/local-citations-guide/?$",
+      "headers": {
+        "Location": "/blog/local-citations-for-palm-coast-businesses/"
+      },
+      "status": 301
+    },
+    {
+      "src": "/blog/google-business-profile-optimization/?$",
+      "headers": {
+        "Location": "/blog/google-business-profile-optimization-palm-coast-fl/"
+      },
+      "status": 301
+    },
+    {
+      "src": "/blog/content-strategy-framework/?$",
+      "headers": {
+        "Location": "/blog/"
+      },
+      "status": 301
+    },
+    {
+      "src": "/blog/technical-seo-checklist/?$",
+      "headers": {
+        "Location": "/blog/on-page-seo-checklist-for-small-business-websites-palm-coast/"
+      },
+      "status": 301
+    },
+    {
+      "src": "/blog/review-management-strategy/?$",
+      "headers": {
+        "Location": "/blog/how-to-get-more-google-reviews-palm-coast-fl/"
+      },
+      "status": 301
+    },
+    {
+      "src": "/blog/post-1-gbp-optimization/?$",
+      "headers": {
+        "Location": "/blog/google-business-profile-optimization-palm-coast-fl/"
+      },
+      "status": 301
+    },
+    {
+      "src": "/blog/post-2-ranking-factors/?$",
+      "headers": {
+        "Location": "/blog/palm-coast-fl-google-maps-ranking-factors-2026/"
+      },
+      "status": 301
+    },
+    {
+      "src": "/blog/post-3-seo-mistakes/?$",
+      "headers": {
+        "Location": "/blog/why-my-palm-coast-business-doesnt-show-up-on-google/"
+      },
+      "status": 301
+    },
+    {
+      "src": "/blog/post-4-citations/?$",
+      "headers": {
+        "Location": "/blog/local-citations-for-palm-coast-businesses/"
+      },
+      "status": 301
+    },
+    {
+      "src": "/blog/post-5-maps-vs-organic/?$",
+      "headers": {
+        "Location": "/blog/seo-vs-google-ads-for-palm-coast-small-business/"
+      },
+      "status": 301
+    },
+    {
+      "src": "/about/?$",
+      "dest": "/about.html"
+    },
+    {
       "src": "/blog/?$",
       "dest": "/blog/index.html"
     },
     {
       "src": "/blog/([^/]+)/?$",
-      "dest": "/blog/$1.html"
+      "dest": "/blog/.html"
     },
     {
       "src": "/robots.txt",
