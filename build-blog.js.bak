@@ -111,17 +111,6 @@ posts.forEach(post => {
         p { margin: 1rem 0; }
         .meta { color: #666; font-size: 0.9rem; margin: 1rem 0 2rem; }
         .back-link { margin: 2rem 0; }
-        .related-posts { margin: 3rem 0 2rem; padding-top: 2rem; border-top: 2px solid #e9ecef; }
-        .related-posts h3 { font-size: 1.1rem; color: #333; margin-bottom: 1rem; }
-        .related-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; }
-        .related-card { background: #fff; border: 1px solid #ddd; border-radius: 8px; padding: 1rem; }
-        .related-card a { font-weight: 600; font-size: 0.9rem; display: block; margin-bottom: 0.4rem; }
-        .related-card p { font-size: 0.8rem; color: #666; margin: 0; }
-        .cta-box { background: #0066cc; color: #fff; border-radius: 10px; padding: 2rem; text-align: center; margin: 2rem 0; }
-        .cta-box h3 { color: #fff; font-size: 1.2rem; margin-bottom: 0.5rem; }
-        .cta-box p { color: rgba(255,255,255,0.9); font-size: 0.9rem; margin-bottom: 1rem; }
-        .cta-btn { display: inline-block; background: #fff; color: #0066cc; padding: 0.6rem 1.4rem; border-radius: 6px; font-weight: 600; font-size: 0.95rem; text-decoration: none; }
-        .cta-btn:hover { background: #f0f4ff; text-decoration: none; }
     </style>
 </head>
 <body>
@@ -138,21 +127,6 @@ posts.forEach(post => {
         </div>
         <div class="content">
             ${post.html}
-        </div>
-        <div class="related-posts">
-          <h3>More Local SEO Guides</h3>
-          <div class="related-grid">
-            ${posts.filter(p => p.slug !== post.slug).slice(0, 3).map(p => `
-            <div class="related-card">
-              <a href="/blog/${p.slug}/">${p.title}</a>
-              <p>${(p.description || '').slice(0, 80)}${(p.description || '').length > 80 ? '...' : ''}</p>
-            </div>`).join('')}
-          </div>
-        </div>
-        <div class="cta-box">
-          <h3>Want These Results for Your Palm Coast Business?</h3>
-          <p>TD Local SEO gets local businesses into the Google Maps Top 3. Free audit included.</p>
-          <a href="/" class="cta-btn">Get Your Free SEO Audit →</a>
         </div>
         <div class="back-link">
             <a href="/blog/">← Back to all posts</a>
