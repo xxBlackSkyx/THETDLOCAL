@@ -151,6 +151,7 @@ posts.forEach(post => {
         .cta-btn { display: inline-block; background: #fff; color: #0066cc; padding: 0.6rem 1.4rem; border-radius: 6px; font-weight: 600; font-size: 0.95rem; text-decoration: none; }
         .cta-btn:hover { background: #f0f4ff; text-decoration: none; }
     </style>
+    <script defer src="https://cdn.vercel-analytics.com/v1/script.js"><\/script>
 </head>
 <body>
     <header>
