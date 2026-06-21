@@ -58,12 +58,28 @@ const postsDir = path.join(__dirname, 'blog', 'posts');
 const posts = [];
 
 if (fs.existsSync(postsDir)) {
-  const files = fs.readdirSync(postsDir).filter(f => f.endsWith('.md'));
+  const files = fs.readdirSync(postsDir).filter(f => f.endsWith('.md') && f.toLowerCase() !== 'readme.md');
   
   files.forEach(file => {
     const content = fs.readFileSync(path.join(postsDir, file), 'utf8');
-    const parsed = parseFrontMatter(content);
-    
+    let parsed = parseFrontMatter(content);
+
+    if (!parsed) {
+      // Self-heal: post missing front matter — derive it instead of silently dropping
+      const body = content.replace(/^\s+/, '');
+      const h1 = (body.match(/^#\s+(.+)$/m) || [])[1];
+      const dateM = file.match(/^(\d{4}-\d{2}-\d{2})/);
+      const para = (body.split('\n\n').find(b => b.trim() && !b.trim().startsWith('#')) || '')
+                     .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1').replace(/[*_`#>]/g, '').trim();
+      parsed = { meta: {
+        title: h1 || file.replace(/^\d{4}-\d{2}-\d{2}-/, '').replace(/\.md$/, '').replace(/-/g, ' '),
+        slug: file.replace(/\.md$/, '').replace(/^\d{4}-\d{2}-\d{2}-/, ''),
+        description: para.slice(0, 155),
+        date: dateM ? dateM[1] : new Date().toISOString().split('T')[0],
+      }, body };
+      console.log(`⚠ Backfilled missing front matter: ${file}`);
+    }
+
     if (parsed) {
       const slug = parsed.meta.slug || file.replace(/\.md$/, '');
       const html = markdownToHtml(parsed.body);
