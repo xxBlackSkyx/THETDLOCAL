@@ -4,6 +4,14 @@
   "outputDirectory": ".",
   "routes": [
     {
+      "src": "/free-audit/?$",
+      "dest": "/free-audit.html"
+    },
+    {
+      "src": "/internet-marketing-palm-coast/?$",
+      "dest": "/internet-marketing-palm-coast.html"
+    },
+    {
       "src": "/blog/gbp-optimization/?$",
       "headers": {
         "Location": "/blog/google-business-profile-optimization-palm-coast-fl/"

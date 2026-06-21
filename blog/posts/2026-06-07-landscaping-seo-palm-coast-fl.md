@@ -1,3 +1,12 @@
+---
+title: Landscaping SEO in Palm Coast, FL: Get Your Business on the First Page
+slug: landscaping-seo-palm-coast-fl
+meta_description: Palm Coast residents search online for landscaping services at an ever‑increasing rate. According to recent data from Google, 73% of local searches never...
+date: 2026-06-07
+author: Tyler Davis
+category: Local SEO
+---
+
 # Landscaping SEO in Palm Coast, FL: Get Your Business on the First Page
 
 *By Tyler Davis, TD Local SEO*  

@@ -1,3 +1,12 @@
+---
+title: Landscaping SEO in Palm Coast, FL: Boost Your Business
+slug: landscaping-seo-palm-coast-fl
+meta_description: Landscaping businesses in Palm Coast, FL face fierce competition online. Most potential customers start their search on Google, and if your business...
+date: 2026-06-05
+author: Tyler Davis
+category: Local SEO
+---
+
 # Landscaping SEO in Palm Coast, FL: Boost Your Business
 
 *Published on 2026-06-05*
