@@ -299,6 +299,8 @@ const staticPages = [
   { loc: 'https://www.tdlocalseo.com/', lastmod: today, changefreq: 'weekly', priority: '1.0' },
   { loc: 'https://www.tdlocalseo.com/blog/', lastmod: today, changefreq: 'daily', priority: '0.9' },
   { loc: 'https://www.tdlocalseo.com/about/', lastmod: today, changefreq: 'monthly', priority: '0.7' },
+  { loc: 'https://www.tdlocalseo.com/internet-marketing-palm-coast/', lastmod: today, changefreq: 'monthly', priority: '0.9' },
+  { loc: 'https://www.tdlocalseo.com/free-audit/', lastmod: today, changefreq: 'monthly', priority: '0.8' },
 ];
 const staticEntries = staticPages.map(p => `
   <url>
