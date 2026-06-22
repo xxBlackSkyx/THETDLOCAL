@@ -133,7 +133,7 @@
     },
     {
       "src": "/blog/([^/]+)/?$",
-      "dest": "/blog/.html"
+      "dest": "/blog/$1.html"
     },
     {
       "src": "/robots.txt",
