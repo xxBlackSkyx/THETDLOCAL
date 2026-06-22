@@ -1,7 +1,7 @@
 User-agent: *
 Allow: /
 Allow: /blog/
-Sitemap: https://tdlocalseo.com/sitemap.xml
+Sitemap: https://www.tdlocalseo.com/sitemap.xml
 
 User-agent: Googlebot
 Allow: /

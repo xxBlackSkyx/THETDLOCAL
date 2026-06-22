@@ -111,12 +111,12 @@ posts.forEach(post => {
     <title>${post.title} | TD Local SEO</title>
     <meta name="description" content="${post.description}">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://tdlocalseo.com/blog/${post.slug}/">
+    <link rel="canonical" href="https://www.tdlocalseo.com/blog/${post.slug}/">
     <meta property="og:title" content="${post.title} | TD Local SEO">
     <meta property="og:description" content="${post.description}">
     <meta property="og:type" content="article">
-    <meta property="og:url" content="https://tdlocalseo.com/blog/${post.slug}/">
-    <meta property="og:image" content="https://tdlocalseo.com/og-default.jpg">
+    <meta property="og:url" content="https://www.tdlocalseo.com/blog/${post.slug}/">
+    <meta property="og:image" content="https://www.tdlocalseo.com/og-default.jpg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="628">
     <meta property="article:published_time" content="${post.date}">
@@ -124,20 +124,20 @@ posts.forEach(post => {
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="${post.title} | TD Local SEO">
     <meta name="twitter:description" content="${post.description}">
-    <meta name="twitter:image" content="https://tdlocalseo.com/og-default.jpg">
+    <meta name="twitter:image" content="https://www.tdlocalseo.com/og-default.jpg">
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "BlogPosting",
       "headline": "${post.title}",
       "description": "${post.description}",
-      "url": "https://tdlocalseo.com/blog/${post.slug}/",
+      "url": "https://www.tdlocalseo.com/blog/${post.slug}/",
       "datePublished": "${post.date}",
       "dateModified": "${post.date}",
-      "author": {"@type": "Person", "name": "${post.author}", "url": "https://tdlocalseo.com/about"},
-      "publisher": {"@type": "Organization", "name": "TD Local SEO", "url": "https://tdlocalseo.com"},
-      "image": "https://tdlocalseo.com/og-default.jpg",
-      "mainEntityOfPage": {"@type": "WebPage", "@id": "https://tdlocalseo.com/blog/${post.slug}/"}
+      "author": {"@type": "Person", "name": "${post.author}", "url": "https://www.tdlocalseo.com/about"},
+      "publisher": {"@type": "Organization", "name": "TD Local SEO", "url": "https://www.tdlocalseo.com"},
+      "image": "https://www.tdlocalseo.com/og-default.jpg",
+      "mainEntityOfPage": {"@type": "WebPage", "@id": "https://www.tdlocalseo.com/blog/${post.slug}/"}
     }
     <\/script>
     <style>
@@ -219,7 +219,7 @@ const indexHtml = `<!DOCTYPE html>
     <title>Local SEO Blog | TD Local SEO</title>
     <meta name="description" content="Local SEO tips, strategies, and case studies for small businesses in Palm Coast, Flagler County, and beyond.">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://tdlocalseo.com/blog/">
+    <link rel="canonical" href="https://www.tdlocalseo.com/blog/">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: #333; background: #f8f9fa; }
