@@ -4,6 +4,10 @@
   "outputDirectory": ".",
   "routes": [
     {
+      "src": "/security.txt",
+      "dest": "/.well-known/security.txt"
+    },
+    {
       "src": "/free-audit/?$",
       "dest": "/free-audit.html"
     },
