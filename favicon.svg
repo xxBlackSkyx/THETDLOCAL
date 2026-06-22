@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-  <rect width="512" height="512" rx="104" fill="#0066cc"/>
+  <rect width="512" height="512" rx="104" fill="#111111"/>
   <text x="50%" y="50%" dy="0.02em" text-anchor="middle" dominant-baseline="central"
-        font-family="Arial, Helvetica, sans-serif" font-weight="700"
-        font-size="300" fill="#ffffff">TD</text>
+        font-family="Georgia, 'Times New Roman', serif" font-weight="700"
+        font-size="290" fill="#ffffff">TD</text>
 </svg>
