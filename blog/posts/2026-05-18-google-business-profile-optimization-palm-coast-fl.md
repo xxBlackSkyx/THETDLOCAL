@@ -111,3 +111,5 @@ Optimizing your Google Business Profile is one of the highest-ROI things a Palm 
 If you would rather focus on running your business, [TD Local SEO](/) handles all of this for Palm Coast and Flagler County businesses. From profile setup to ongoing management, we make sure your business shows up when local customers are searching.
 
 [Learn more about our local SEO services in Palm Coast.](/)
+
+Your Google Business Profile works best as part of a broader [internet marketing strategy for Palm Coast businesses](https://www.tdlocalseo.com/internet-marketing-palm-coast/).

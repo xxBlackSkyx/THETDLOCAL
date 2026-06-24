@@ -102,3 +102,5 @@ If you do go the DIY route, commit to it fully. Half-hearted SEO is worse than n
 Either way, the worst thing you can do is nothing. Your competitors aren't waiting, and neither is Google.
 
 [Learn more about our local SEO services in Palm Coast.](https://tdlocalseo.com/blog/local-seo-services-palm-coast-fl)
+
+Looking for more than just SEO? We offer a complete [internet marketing service in Palm Coast](https://www.tdlocalseo.com/internet-marketing-palm-coast/) covering websites, reviews, and Google Maps.
