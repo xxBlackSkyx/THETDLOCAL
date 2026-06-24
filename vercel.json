@@ -4,6 +4,14 @@
   "outputDirectory": ".",
   "routes": [
     {
+      "src": "/local-seo-bunnell/?$",
+      "dest": "/local-seo-bunnell.html"
+    },
+    {
+      "src": "/local-seo-flagler-beach/?$",
+      "dest": "/local-seo-flagler-beach.html"
+    },
+    {
       "src": "/security.txt",
       "dest": "/.well-known/security.txt"
     },
