@@ -1,7 +1,7 @@
 ---
 title: Local SEO Monthly Report What to Track
 slug: local-seo-monthly-report-what-to-track
-meta_description: Learn what to track in your local SEO monthly report for Palm Coast FL businesses. Essential metrics, tools, and actionable insights to improve rankings and drive more customers.
+meta_description: Running a successful local SEO campaign for your Palm Coast or Flagler County business requires consistent monitoring and adjustment.
 target_keyword: local seo monthly report what to track
 date: 2026-08-17
 ---

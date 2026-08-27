@@ -17,7 +17,7 @@ For small businesses in Palm Coast, **how to build local citations for small bus
 
 ## How To Build Local Citations Step-By-Step
 Building local citations requires a strategic approach to ensure consistency and accuracy across all platforms. Here's a step-by-step guide on **how to build local citations for small business**:
-1. **Claim Your Google My Business Listing**: This is the most critical citation for any local business. Claiming and optimizing your Google My Business listing can significantly improve your local search rankings.
+1. **Claim Your Google Business Profile Listing**: This is the most critical citation for any local business. Claiming and optimizing your Google Business Profile listing can significantly improve your local search rankings.
 2. **Identify Relevant Directories**: Look for local business directories, industry-specific listings, and review sites where your business can be listed. Some examples include Yelp, Bing Places, and Healthgrades for healthcare businesses.
 3. **Submit Your Business Information**: Fill out the required information for each directory, ensuring your NAP is consistent across all listings. Double-check for any spelling mistakes or inconsistencies.
 4. **Verify Your Listings**: Many directories require verification to ensure the business owner is the one submitting the listing. This can be done via phone, email, or postcard.

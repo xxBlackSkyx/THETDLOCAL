@@ -12,11 +12,11 @@ If your Palm Coast storefront sits near Town Center or along US‑1, the first 9
 
 ## What Is Local SEO?
 
-Local SEO is the practice of optimizing a business’s online presence so that it ranks higher in search results for queries tied to a specific location. It’s not just about keyword stuffing; it’s about aligning your website, Google My Business profile, citations, and reviews with the needs of customers searching for “plumber near me” or “best coffee shop in Palm Coast.”  
+Local SEO is the practice of optimizing a business’s online presence so that it ranks higher in search results for queries tied to a specific location. It’s not just about keyword stuffing; it’s about aligning your website, Google Business Profile, citations, and reviews with the needs of customers searching for “plumber near me” or “best coffee shop in Palm Coast.”  
 
 Key components include:
 
-- **Google My Business (GMB) optimization** – accurate NAP (Name, Address, Phone), categories, business hours, photos, and Q&A sections.
+- **Google Business Profile (GBP) optimization** – accurate NAP (Name, Address, Phone), categories, business hours, photos, and Q&A sections.
 - **On‑page optimization** – title tags, meta descriptions, header tags, and localized schema markup.
 - **Citation consistency** – ensuring your NAP appears the same across directories like Yelp, YellowPages, and local chambers.
 - **Review management** – encouraging positive reviews, responding to feedback, and monitoring sentiment.
@@ -29,7 +29,7 @@ Understanding these elements sets the stage for a structured rollout. The first 
 Palm Coast is a growing community with a mix of residential neighborhoods, vacation spots like Flagler Beach, and a thriving business district along US‑1. Local SEO is vital because:
 
 1. **High Intent Traffic** – Residents and tourists searching for services in Palm Coast are ready to buy. A strong local presence captures that intent before competitors.
-2. **Mobile Searches** – Over 70% of local queries come from mobile devices. A mobile‑friendly site paired with an optimized GMB listing ensures you appear in “near me” results.
+2. **Mobile Searches** – Over 70% of local queries come from mobile devices. A mobile‑friendly site paired with an optimized GBP listing ensures you appear in “near me” results.
 3. **Community Trust** – Positive reviews and consistent citations build credibility among Palm Coast shoppers who value local recommendations.
 4. **Competitive Edge** – Many local businesses still rely on generic SEO. By focusing on local signals, you outrank competitors who overlook the importance of NAP consistency and localized content.
 
@@ -40,9 +40,9 @@ For example, a landscaping company that appears in the top three results for “
 ### Phase 1 – Audit & Setup (Days 1‑15)
 
 1. **Website Health Check** – Use tools like Screaming Frog or Google Search Console to identify crawl errors, broken links, and duplicate content.  
-2. **GMB Profile Creation** – If you don’t have one, set up a profile. If you do, claim it and verify ownership.  
+2. **GBP Profile Creation** – If you don’t have one, set up a profile. If you do, claim it and verify ownership.  
 3. **Citation Inventory** – List every online directory where your business appears. Note inconsistencies in NAP or missing categories.  
-4. **Competitor Benchmarking** – Identify the top 3 local competitors. Note their GMB ranking, review volume, and backlink profile.  
+4. **Competitor Benchmarking** – Identify the top 3 local competitors. Note their GBP ranking, review volume, and backlink profile.  
 
 ### Phase 2 – On‑Page Optimization (Days 16‑30)
 
@@ -67,15 +67,15 @@ For example, a landscaping company that appears in the top three results for “
 ### Phase 5 – Measurement & Optimization (Days 61‑90)
 
 1. **Rank Tracking** – Use tools like BrightLocal to monitor rankings for primary keywords (e.g., “plumber in Palm Coast”).  
-2. **GMB Insights** – Analyze impressions, clicks, and calls.  
+2. **GBP Insights** – Analyze impressions, clicks, and calls.  
 3. **Conversion Tracking** – Set up goals in Google Analytics (e.g., phone calls, contact form submissions).  
 4. **Adjust Strategy** – If certain keywords underperform, tweak meta tags or create new content.
 
-By the end of the 90‑day window, you should see an uptick in local search impressions, higher GMB click‑through rates, and increased foot traffic or inquiries. Continue to iterate beyond this period; local SEO is an ongoing process.
+By the end of the 90‑day window, you should see an uptick in local search impressions, higher GBP click‑through rates, and increased foot traffic or inquiries. Continue to iterate beyond this period; local SEO is an ongoing process.
 
 ## Common Mistakes to Avoid
 
-1. **Ignoring GMB Optimization** – A missing or incomplete profile can prevent you from appearing in “Google Maps” results.  
+1. **Ignoring GBP Optimization** – A missing or incomplete profile can prevent you from appearing in “Google Maps” results.  
 2. **Inconsistent NAP** – Even a single missing digit in your address can confuse search engines and users.  
 3. **Overlooking Mobile UX** – A site that doesn’t load fast on smartphones loses local search visibility.  
 4. **Neglecting Reviews** – Failing to request or respond to reviews can hurt trust signals.  
@@ -85,8 +85,8 @@ Addressing these pitfalls early ensures that your local SEO efforts deliver sust
 
 ## Local FAQ
 
-**Q1: How long does it take for a new GMB listing to rank in the local pack?**  
-A1: Typically, a well‑optimized GMB profile can appear in the local pack within 2‑4 weeks. However, the speed depends on competition, review volume, and overall profile completeness. Consistent updates and engagement accelerate the process.
+**Q1: How long does it take for a new GBP listing to rank in the local pack?**  
+A1: Typically, a well‑optimized GBP profile can appear in the local pack within 2‑4 weeks. However, the speed depends on competition, review volume, and overall profile completeness. Consistent updates and engagement accelerate the process.
 
 **Q2: Should I target multiple neighborhoods in Palm Coast or focus on one area?**  
 A2: Start with the core area where most customers live or visit—often Town Center or US‑1. Once you dominate that zone, expand to adjacent neighborhoods like Bunnell or Flagler Beach. Over‑targeting can dilute signals and confuse search engines.
@@ -95,7 +95,7 @@ A2: Start with the core area where most customers live or visit—often Town Cen
 A3: Yes. While local citations are crucial, backlinks from reputable local sites (e.g., the Flagler County Chamber, local news outlets) reinforce authority and improve rankings. Aim for a mix of high‑quality, relevant links rather than a large quantity of low‑value sites.
 
 **Q4: How can I encourage more reviews from customers in Palm Coast?**  
-A4: Offer a small incentive (e.g., a discount on the next service) for leaving a review. Provide a direct link to your GMB profile in follow‑up emails or receipts. Make the process as frictionless as possible by using QR codes or a dedicated review page on your website.
+A4: Offer a small incentive (e.g., a discount on the next service) for leaving a review. Provide a direct link to your GBP profile in follow‑up emails or receipts. Make the process as frictionless as possible by using QR codes or a dedicated review page on your website.
 
 ## Conclusion
 

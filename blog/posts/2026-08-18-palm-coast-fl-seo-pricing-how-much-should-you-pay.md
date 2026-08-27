@@ -15,7 +15,7 @@ If you own a shop in the Town Center, a restaurant on US‑1, or a service busin
 SEO pricing in Palm Coast, FL is not a one‑size‑fits‑all number. It reflects the scope of work, the competition level, and the desired results. Most local agencies structure their fees around three core services:
 
 1. **On‑page optimization** – keyword research, meta tags, header structure, and content tweaks that align with local search intent.
-2. **Local listing management** – ensuring your business appears consistently on Google My Business, Apple Maps, and niche directories such as the Flagler County Chamber of Commerce.
+2. **Local listing management** – ensuring your business appears consistently on Google Business Profile, Apple Maps, and niche directories such as the Flagler County Chamber of Commerce.
 3. **Link building & reputation management** – acquiring high‑quality backlinks from reputable regional sites and managing online reviews.
 
 Typical monthly retainer ranges from **$300 to $1,500** for small to mid‑sized businesses in the Palm Coast area. A one‑time setup fee of **$200 to $800** covers initial audits, competitor analysis, and the first wave of on‑page changes. For larger enterprises or highly competitive niches like “dentist Palm Coast” or “plumber US‑1,” agencies may charge upwards of **$2,000–$3,000** per month.
@@ -82,7 +82,7 @@ SEO is inherently a long‑term investment and does not fit a pay‑per‑click 
 
 ### 4. How do I measure ROI for local SEO in Bunnell?
 
-Track the number of phone calls, online inquiries, and in‑store visits that come directly from the local search results. Use call tracking numbers, Google My Business insights, and QR codes on printed materials to attribute conversions accurately. Compare these metrics to your monthly spend to calculate ROI.
+Track the number of phone calls, online inquiries, and in‑store visits that come directly from the local search results. Use call tracking numbers, Google Business Profile insights, and QR codes on printed materials to attribute conversions accurately. Compare these metrics to your monthly spend to calculate ROI.
 
 ## Conclusion
 

@@ -21,7 +21,7 @@ Getting backlinks for a local business website requires a strategic approach. He
 2. Reach out to the website owners or editors and introduce your business. Offer to provide valuable content, such as a guest post or infographic, in exchange for a link back to your website.
 3. Leverage local directories and citations, such as the Palm Coast Business Directory or the Flagler County Chamber of Commerce, to list your business and get a backlink.
 4. Partner with other local businesses to co-create content or host events, and ask for a link back to your website.
-5. Utilize online review sites, such as Yelp or Google My Business, to encourage customers to leave reviews and increase your website's visibility.
+5. Utilize online review sites, such as Yelp or Google Business Profile, to encourage customers to leave reviews and increase your website's visibility.
 By following these steps, you can start building high-quality backlinks that will improve your website's visibility and credibility in local search results.
 
 ## Common Mistakes to Avoid When Building Backlinks for a Local Business Website

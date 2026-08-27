@@ -1,5 +1,5 @@
 ---
-title: SEO For FLooring Companies Palm Coast FL
+title: SEO For Flooring Companies Palm Coast FL
 slug: seo-for-flooring-companies-palm-coast-fl
 meta_description: Boost online visibility with SEO for flooring companies Palm Coast FL. Learn how to optimize your website and attract local customers.
 target_keyword: seo for flooring companies palm coast fl

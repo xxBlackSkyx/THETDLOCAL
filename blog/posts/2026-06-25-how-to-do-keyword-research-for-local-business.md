@@ -1,3 +1,11 @@
+---
+title: How To Do Keyword Research For Local Business
+slug: how-to-do-keyword-research-for-local-business
+meta_description: How To Do Keyword Research For Local Business — what Palm Coast and Flagler County business owners need to know. Free audit from TD Local SEO.
+target_keyword: how to do keyword research for local business
+date: 2026-06-25
+---
+
 # How To Do Keyword Research For Local Business
 
 As a local business owner in Palm Coast, Flagler County, you understand the significance of having a strong online presence to attract customers from Town Center to Palm Harbor, and all the way down to US-1. To achieve this, mastering **how to do keyword research for local business** is crucial. By optimizing your website and online content with relevant keywords, you can increase your visibility in search engine results, driving more traffic to your store, whether you're located in Flagler Beach or Bunnell. In this article, we will explore the ins and outs of keyword research, providing you with the tools and knowledge necessary to boost your local business's online presence.

@@ -1,7 +1,7 @@
 ---
 title: Real Estate Agent SEO Palm Coast FL
 slug: real-estate-agent-seo-palm-coast-fl
-meta_description: Palm Coast, a city located in Flagler County, is a thriving community with a growing real estate market. As a real estate agent in Palm Coast, you...
+meta_description: Palm Coast, a city located in Flagler County, is a thriving community with a growing real estate market.
 date: 2026-06-09
 author: Tyler Davis
 category: Local SEO

@@ -31,7 +31,7 @@ A 2024 study by BrightLocal found that 76% of people who search for a local busi
 
 ### 1. Google Business Profile — Your Most Important Digital Asset
 
-Your Google Business Profile (formerly Google My Business) is the box that shows up on the right side of Google when someone searches for your type of business. It includes your address, phone number, hours, photos, reviews, and posts.
+Your Google Business Profile is the box that shows up on the right side of Google when someone searches for your type of business. It includes your address, phone number, hours, photos, reviews, and posts.
 
 Here's what to optimize:
 

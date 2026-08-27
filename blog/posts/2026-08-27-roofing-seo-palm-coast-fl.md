@@ -18,7 +18,7 @@ Key components include:
 
 1. **Keyword research** – Identify the phrases homeowners use, such as “roof repair near me,” “roof replacement US‑1,” or “commercial roof installation Flagler Beach.” Tools like Google Keyword Planner or Moz Keyword Explorer reveal search volume and competition.
 2. **On‑page optimization** – Use target keywords in title tags, H1s, meta descriptions, and throughout the content, but keep the copy natural and helpful.
-3. **Local listings** – Claim and verify your Google Business Profile profile, add accurate NAP (Name, Address, Phone) details, upload high‑quality photos, and encourage satisfied clients to leave reviews.
+3. **Local listings** – Claim and verify your Google Business Profile, add accurate NAP (Name, Address, Phone) details, upload high‑quality photos, and encourage satisfied clients to leave reviews.
 4. **Backlink strategy** – Earn links from reputable local sites (e.g., Flagler County Chamber of Commerce, Bunnell community blogs) to boost domain authority.
 5. **Technical health** – Ensure fast page load times, mobile responsiveness, and secure HTTPS connections.
 
@@ -99,13 +99,13 @@ Avoiding these pitfalls keeps your SEO strategy healthy and growth‑oriented.
 A1: Organic rankings typically begin to shift within 3 to 6 months after a comprehensive audit and implementation. Early traffic increases may appear within 1 to 2 months, especially for local keywords with lower competition. Patience is key; consistent updates and content creation accelerate the process.
 
 **Q2: Should I pay for local listings on sites like Yelp or Angie’s List?**  
-A2: Paid listings can boost visibility but are not a substitute for a well‑maintained Google Business Profile profile. Use paid placements strategically for high‑value keywords, but prioritize organic listings and review management for long‑term trust.
+A2: Paid listings can boost visibility but are not a substitute for a well‑maintained Google Business Profile. Use paid placements strategically for high‑value keywords, but prioritize organic listings and review management for long‑term trust.
 
 **Q3: What role do backlinks from local partners play in my SEO?**  
 A3: Backlinks from reputable local partners, such as the Flagler County Chamber of Commerce or community blogs, carry strong local relevance signals. They improve domain authority and can help your site rank for “roofing services in Palm Harbor” or “roof repair near US‑1.”
 
 **Q4: How can I optimize my website for voice search in Palm Coast?**  
-A4: Voice queries tend to be conversational and longer. Incorporate natural question phrases (“What is the best roof repair company in Palm Coast?”) into your content. Ensure your Google Business Profile profile is complete, as voice assistants often pull directly from Google Business Profile data.
+A4: Voice queries tend to be conversational and longer. Incorporate natural question phrases (“What is the best roof repair company in Palm Coast?”) into your content. Ensure your Google Business Profile is complete, as voice assistants often pull directly from Google Business Profile data.
 
 ---
 
