@@ -294,15 +294,19 @@ console.log(`✓ Generated: /blog/sitemap.xml with ${posts.length} posts`);
 console.log('\n✅ Blog build complete!');
 
 // Generate root sitemap.xml (replaces static file — www canonical URLs)
+// `today` is only for pages this build actually rewrites: the homepage gets fresh
+// blog cards injected below, and /blog/ gets a new index entry per post. The rest
+// are hand-edited HTML — bump their lastmod when you edit the page, not on every
+// build, or Google learns to ignore lastmod across the whole sitemap.
 const today = new Date().toISOString().split('T')[0];
 const staticPages = [
   { loc: 'https://www.tdlocalseo.com/', lastmod: today, changefreq: 'weekly', priority: '1.0' },
   { loc: 'https://www.tdlocalseo.com/blog/', lastmod: today, changefreq: 'daily', priority: '0.9' },
-  { loc: 'https://www.tdlocalseo.com/about/', lastmod: today, changefreq: 'monthly', priority: '0.7' },
-  { loc: 'https://www.tdlocalseo.com/internet-marketing-palm-coast/', lastmod: today, changefreq: 'monthly', priority: '0.9' },
-  { loc: 'https://www.tdlocalseo.com/free-audit/', lastmod: today, changefreq: 'monthly', priority: '0.8' },
-  { loc: 'https://www.tdlocalseo.com/local-seo-flagler-beach/', lastmod: today, changefreq: 'monthly', priority: '0.8' },
-  { loc: 'https://www.tdlocalseo.com/local-seo-bunnell/', lastmod: today, changefreq: 'monthly', priority: '0.8' },
+  { loc: 'https://www.tdlocalseo.com/about/', lastmod: '2026-07-16', changefreq: 'monthly', priority: '0.7' },
+  { loc: 'https://www.tdlocalseo.com/internet-marketing-palm-coast/', lastmod: '2026-07-16', changefreq: 'monthly', priority: '0.9' },
+  { loc: 'https://www.tdlocalseo.com/free-audit/', lastmod: '2026-08-04', changefreq: 'monthly', priority: '0.8' },
+  { loc: 'https://www.tdlocalseo.com/local-seo-flagler-beach/', lastmod: '2026-07-16', changefreq: 'monthly', priority: '0.8' },
+  { loc: 'https://www.tdlocalseo.com/local-seo-bunnell/', lastmod: '2026-07-16', changefreq: 'monthly', priority: '0.8' },
 ];
 const staticEntries = staticPages.map(p => `
   <url>
