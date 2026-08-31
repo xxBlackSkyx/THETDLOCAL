@@ -976,9 +976,19 @@ document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener('click'
     attributionControl: true
   });
 
-  L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
-    attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OSM</a> &copy; <a href="https://carto.com/">CARTO</a>',
-    subdomains:'abcd',
+  // Esri dark canvas, not CARTO: CARTO's keyless basemap CDN now bakes an
+  // "API KEY REQUIRED" watermark into every tile. Esri needs no key, but its
+  // dark canvas has no tiles past z16 — maxNativeZoom upscales z16 instead of
+  // fetching the "Map data not yet available" placeholder it serves above that.
+  L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
+    attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OSM</a> &copy; <a href="https://www.esri.com/">Esri</a>',
+    maxNativeZoom:16,
+    maxZoom:19
+  }).addTo(diffMap);
+
+  // Street/place labels ride above the base layer.
+  L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Reference/MapServer/tile/{z}/{y}/{x}', {
+    maxNativeZoom:16,
     maxZoom:19
   }).addTo(diffMap);
 
