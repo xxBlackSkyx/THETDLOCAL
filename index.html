@@ -818,6 +818,9 @@ footer{border-top:1px solid var(--border);padding:52px 48px 28px;max-width:920px
     <h2 class="sec-h reveal d1" style="text-align:center">Ready to Dominate <em>Local Search?</em></h2>
     <div style="max-width:520px;margin:40px auto;background:var(--white);border:1px solid var(--border);border-radius:14px;padding:32px;box-shadow:var(--sh)">
       <form id="contactForm" onsubmit="submitForm(event)">
+        <!-- Honeypot: hidden from people, filled by bots. Server drops any submission that sets it. -->
+        <input type="text" name="company" tabindex="-1" autocomplete="off" aria-hidden="true"
+               style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
         <div style="margin-bottom:16px">
           <label style="display:block;font-size:12px;font-weight:600;margin-bottom:6px;color:var(--muted);text-transform:uppercase">Your Name</label>
           <input type="text" name="name" required style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:8px;font-family:var(--sans);font-size:14px">
@@ -1212,7 +1215,8 @@ async function submitForm(e) {
     name: form.name.value,
     email: form.email.value,
     phone: form.phone.value,
-    message: form.message.value
+    message: form.message.value,
+    company: form.company.value
   };
 
   try {
