@@ -160,6 +160,10 @@
       "dest": "/about.html"
     },
     {
+      "src": "/privacy/?$",
+      "dest": "/privacy.html"
+    },
+    {
       "src": "/blog/?$",
       "dest": "/blog/index.html"
     },
