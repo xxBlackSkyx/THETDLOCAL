@@ -9,12 +9,15 @@
 <link rel="canonical" href="https://www.tdlocalseo.com/about/">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-<script defer src="https://cdn.vercel-analytics.com/v1/script.js"></script>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Epilogue:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preload" href="/fonts/epilogue-latin-var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/cormorant-garamond-latin-var.woff2" as="font" type="font/woff2" crossorigin>
 <style>
+@font-face{font-family:'Epilogue';font-style:normal;font-weight:300 800;font-display:swap;src:url(/fonts/epilogue-latin-var.woff2) format('woff2')}
+@font-face{font-family:'Cormorant Garamond';font-style:normal;font-weight:400 600;font-display:optional;src:url(/fonts/cormorant-garamond-latin-var.woff2) format('woff2')}
+@font-face{font-family:'Cormorant Garamond';font-style:italic;font-weight:400 600;font-display:swap;src:url(/fonts/cormorant-garamond-italic-latin-var.woff2) format('woff2')}
 :root{
-  --bg:#f2f0ec;--white:#fff;--ink:#111010;--ink2:#2d2b29;--muted:#8a8680;
-  --border:#dbd8d2;--blue:#1d4ed8;--green:#15803d;--gold:#b8860b;
+  --bg:#f2f0ec;--white:#fff;--ink:#111010;--ink2:#2d2b29;--muted:#6e6a64;
+  --border:#dbd8d2;--blue:#1d4ed8;--green:#157a3a;--gold:#b8860b;
   --serif:'Cormorant Garamond',Georgia,serif;--sans:'Epilogue',system-ui,sans-serif;
   --sh-sm:0 1px 3px rgba(0,0,0,.06),0 1px 2px rgba(0,0,0,.04);
   --sh:0 4px 16px rgba(0,0,0,.08),0 1px 4px rgba(0,0,0,.04);
@@ -33,8 +36,8 @@ nav{background:rgba(242,240,236,.92);backdrop-filter:blur(14px);-webkit-backdrop
 .nav-links{display:flex;align-items:center;gap:26px}
 .nav-links a{color:var(--muted);font-size:12.5px;font-weight:500;transition:color .2s}
 .nav-links a:hover{color:var(--ink)}
-.btn-nav{background:var(--ink);color:#fff;padding:8px 18px;border-radius:7px;font-size:12.5px;font-weight:600}
-.btn-nav:hover{color:#fff}
+.nav-links .btn-nav{background:var(--ink);color:#fff;padding:8px 18px;border-radius:7px;font-size:12.5px;font-weight:600}
+.nav-links .btn-nav:hover{color:#fff}
 /* HERO */
 .hero{padding:5rem 0 2.5rem;text-align:center}
 .hero h1{font-family:var(--serif);font-size:clamp(40px,6vw,64px);font-weight:600;line-height:1.05;letter-spacing:-.025em;color:var(--ink);margin-bottom:1rem}
@@ -82,7 +85,7 @@ footer a:hover{color:var(--ink)}
 <body>
 
 <nav>
-  <a class="nav-logo" href="/"><img src="/favicon.svg" alt="TD Local SEO"><span>TD Local SEO</span></a>
+  <a class="nav-logo" href="/"><img src="/favicon.svg" alt="TD Local SEO" width="30" height="30"><span>TD Local SEO</span></a>
   <div class="nav-links">
     <a href="/">Home</a>
     <a href="/blog/">Blog</a>
@@ -91,6 +94,7 @@ footer a:hover{color:var(--ink)}
   </div>
 </nav>
 
+<main>
 <section class="hero">
   <div class="wrap">
     <h1>Meet Tyler Davis</h1>
@@ -144,6 +148,8 @@ footer a:hover{color:var(--ink)}
     </div>
   </div>
 </section>
+
+</main>
 
 <footer>
   <span>&copy; 2026 TD Local SEO · Local SEO in Palm Coast, FL 32137</span>

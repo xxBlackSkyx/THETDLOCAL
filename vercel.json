@@ -4,6 +4,26 @@
   "outputDirectory": ".",
   "routes": [
     {
+      "src": "/(.*)",
+      "headers": {
+        "Strict-Transport-Security": "max-age=63072000; includeSubDomains",
+        "X-Content-Type-Options": "nosniff",
+        "X-Frame-Options": "SAMEORIGIN",
+        "Content-Security-Policy": "frame-ancestors 'self'; base-uri 'self'; object-src 'none'",
+        "Cross-Origin-Opener-Policy": "same-origin",
+        "Referrer-Policy": "strict-origin-when-cross-origin",
+        "Permissions-Policy": "camera=(), microphone=(), geolocation=()"
+      },
+      "continue": true
+    },
+    {
+      "src": "/(fonts|vendor|assets)/(.*)",
+      "headers": {
+        "Cache-Control": "public, max-age=31536000, immutable"
+      },
+      "continue": true
+    },
+    {
       "src": "/local-seo-bunnell/?$",
       "dest": "/local-seo-bunnell.html"
     },

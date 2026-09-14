@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Epilogue:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preload" href="/fonts/epilogue-latin-var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/cormorant-garamond-latin-var.woff2" as="font" type="font/woff2" crossorigin>
     <title>Local SEO in Flagler Beach, FL | TD Local SEO</title>
     <meta name="description" content="Local SEO for Flagler Beach, FL businesses — get found on Google Maps by locals and visitors searching nearby. Top 3 in 90 days or your money back. (386) 206-6786">
     <meta name="robots" content="index, follow">
@@ -58,7 +59,10 @@
     </script>
 
     <style>
-:root{--bg:#f2f0ec;--white:#fff;--ink:#111010;--ink2:#2d2b29;--muted:#8a8680;--border:#dbd8d2;--blue:#1d4ed8;--green:#15803d;--serif:'Cormorant Garamond',Georgia,serif;--sans:'Epilogue',system-ui,sans-serif;--sh-sm:0 1px 3px rgba(0,0,0,.06),0 1px 2px rgba(0,0,0,.04)}
+@font-face{font-family:'Epilogue';font-style:normal;font-weight:300 800;font-display:swap;src:url(/fonts/epilogue-latin-var.woff2) format('woff2')}
+@font-face{font-family:'Cormorant Garamond';font-style:normal;font-weight:400 600;font-display:optional;src:url(/fonts/cormorant-garamond-latin-var.woff2) format('woff2')}
+@font-face{font-family:'Cormorant Garamond';font-style:italic;font-weight:400 600;font-display:swap;src:url(/fonts/cormorant-garamond-italic-latin-var.woff2) format('woff2')}
+:root{--bg:#f2f0ec;--white:#fff;--ink:#111010;--ink2:#2d2b29;--muted:#6e6a64;--border:#dbd8d2;--blue:#1d4ed8;--green:#157a3a;--serif:'Cormorant Garamond',Georgia,serif;--sans:'Epilogue',system-ui,sans-serif;--sh-sm:0 1px 3px rgba(0,0,0,.06),0 1px 2px rgba(0,0,0,.04)}
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{font-family:var(--sans);line-height:1.7;color:var(--ink2);background:var(--bg);font-size:15px}
@@ -105,6 +109,7 @@ footer a{color:var(--blue)}
     </nav>
 </header>
 
+<main>
 <section class="hero">
     <h1>Local SEO in Flagler Beach, FL — Get Found by Locals &amp; Visitors</h1>
     <p class="sub">When someone in Flagler Beach pulls out their phone and searches "near me," your business should be the first thing they see. We make that happen — on Google Maps and in local search.</p>
@@ -140,6 +145,8 @@ footer a{color:var(--blue)}
         <a class="cta-btn" href="tel:3862066786">Call (386) 206-6786</a>
     </div>
 </div>
+
+</main>
 
 <footer>
     TD Local SEO · Serving Flagler Beach &amp; all of Flagler County · (386) 206-6786 · <a href="/">tdlocalseo.com</a>

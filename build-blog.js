@@ -148,6 +148,7 @@ posts.forEach(post => {
         .logo { font-weight: bold; font-size: 1.5rem; color: #0066cc; text-decoration: none; }
         a { color: #0066cc; text-decoration: none; }
         a:hover { text-decoration: underline; }
+        .content a { text-decoration: underline; }
         .container { max-width: 800px; margin: 2rem auto; padding: 0 2rem; }
         h1 { margin: 1.5rem 0 0.5rem; }
         h2 { margin: 1.5rem 0 0.5rem; }
@@ -167,7 +168,6 @@ posts.forEach(post => {
         .cta-btn { display: inline-block; background: #fff; color: #0066cc; padding: 0.6rem 1.4rem; border-radius: 6px; font-weight: 600; font-size: 0.95rem; text-decoration: none; }
         .cta-btn:hover { background: #f0f4ff; text-decoration: none; }
     </style>
-    <script defer src="https://cdn.vercel-analytics.com/v1/script.js"><\/script>
 </head>
 <body>
     <header>

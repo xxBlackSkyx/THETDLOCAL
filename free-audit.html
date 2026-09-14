@@ -13,9 +13,12 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://www.tdlocalseo.com/free-audit/">
 <!-- Vercel Analytics -->
-<script defer src="https://cdn.vercel-analytics.com/v1/script.js"></script>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Epilogue:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preload" href="/fonts/epilogue-latin-var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/cormorant-garamond-latin-var.woff2" as="font" type="font/woff2" crossorigin>
 <style>
+@font-face{font-family:'Epilogue';font-style:normal;font-weight:300 800;font-display:swap;src:url(/fonts/epilogue-latin-var.woff2) format('woff2')}
+@font-face{font-family:'Cormorant Garamond';font-style:normal;font-weight:400 600;font-display:optional;src:url(/fonts/cormorant-garamond-latin-var.woff2) format('woff2')}
+@font-face{font-family:'Cormorant Garamond';font-style:italic;font-weight:400 600;font-display:swap;src:url(/fonts/cormorant-garamond-italic-latin-var.woff2) format('woff2')}
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:'Epilogue',sans-serif;line-height:1.7;color:#2d2b29;background:#f2f0ec}
 .wrap{max-width:1100px;margin:0 auto;padding:0 2rem}
@@ -157,8 +160,26 @@ footer a:hover{color:#fff}
 }
 </script>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RJKHEVSHD0"></script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-RJKHEVSHD0');</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-RJKHEVSHD0');
+  // gtag.js is ~190 KB of main-thread work; fetch it on first interaction or 5 s after load
+  // so it never competes with the first paint. Calls made before then queue in dataLayer.
+  (function(){
+    var done=false, ev=['scroll','pointerdown','keydown','touchstart'];
+    function load(){
+      if(done) return; done=true;
+      ev.forEach(function(e){removeEventListener(e,load)});
+      var s=document.createElement('script');
+      s.async=true; s.src='https://www.googletagmanager.com/gtag/js?id=G-RJKHEVSHD0';
+      document.head.appendChild(s);
+    }
+    ev.forEach(function(e){addEventListener(e,load,{passive:true,once:true})});
+    addEventListener('load',function(){setTimeout(load,5000)});
+  })();
+</script>
 </head>
 <body>
 
@@ -176,6 +197,7 @@ footer a:hover{color:#fff}
   </div>
 </header>
 
+<main>
 <section class="hero">
   <div class="wrap">
     <div class="hero-badge">Free — No Credit Card — No Obligation</div>
@@ -286,12 +308,22 @@ footer a:hover{color:#fff}
       <div class="calendly-inline-widget"
            data-url="https://calendly.com/contact-tdlocalseo/30min?hide_gdpr_banner=1&primary_color=3b82f6"
            style="min-width:320px;height:700px;"></div>
-      <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+      <script>
+      // Calendly's widget pulls ~2.6 MB and sets third-party cookies; load it only when the booking section nears the viewport.
+      new IntersectionObserver(function(entries, obs){
+        if(!entries[0].isIntersecting) return;
+        obs.disconnect();
+        var s=document.createElement('script');
+        s.src='https://assets.calendly.com/assets/external/widget.js';
+        s.async=true;
+        document.body.appendChild(s);
+      },{rootMargin:'600px 0px'}).observe(document.getElementById('book'));
+      </script>
       <noscript>
         <p><a href="https://calendly.com/contact-tdlocalseo/30min" class="btn-alt">Book your free audit &rarr;</a></p>
       </noscript>
       <div class="calendly-fallback" style="margin-top:2rem;text-align:center;">
-        <p style="font-size:.95rem;color:#888;">Prefer not to use the calendar? Reach Tyler directly:</p>
+        <p style="font-size:.95rem;color:#6e6a64;">Prefer not to use the calendar? Reach Tyler directly:</p>
         <a href="tel:+13862066786" class="btn-alt" style="margin-right:1rem;">Call 386-206-6786</a>
         <a href="mailto:contact@tdlocalseo.com?subject=Free SEO Audit Request&body=Hi Tyler, I'd like to book a free local SEO audit for my business. My website is: " class="btn-alt">Email Tyler</a>
       </div>
@@ -324,6 +356,8 @@ footer a:hover{color:#fff}
     </div>
   </div>
 </section>
+
+</main>
 
 <footer>
   <div class="wrap">
