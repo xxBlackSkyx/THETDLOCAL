@@ -186,7 +186,7 @@ Most businesses see initial ranking improvements within 30-60 days. Full results
 Yes. We've replicated this strategy for plumbers, HVAC contractors, dentists, electricians, attorneys, roofers, and service agencies across Flagler County. Any business with local customers can rank top 3 using this approach. The framework is the same — only the keywords and directories change.
 
 **How much does local SEO cost?**
-Our plans range from $1,500-$2,500/month. Quarterly plans include a money-back guarantee — if you don't rank top 3 within 90 days, we refund your fee. Most clients see ROI within the first 60 days.
+Our plans range from $500 to $1,500/month. The Pro plan includes a money-back guarantee — if you don't rank top 3 within 90 days, we refund your fee. Most clients see ROI within the first 60 days.
 
 **What's the #1 ranking factor for Google Maps?**
 Google Business Profile optimization is the single biggest factor. A fully optimized GBP with photos, posts, reviews, and accurate information will outrank a competitor with a better website but a weak GBP. Your GBP is your homepage on Google — treat it that way.
@@ -198,13 +198,13 @@ Technically yes. But it takes 10-15 hours per month of consistent work — optim
 
 If you're a local service business in Palm Coast, Bunnell, Flagler Beach, or anywhere in Flagler County, the same system that took Pistol Pete's from #12 to #3 can work for you.
 
-We guarantee it. Our quarterly plans include:
+Our plans include:
 - Complete Google Business Profile optimization
 - Citation building (40-80+ directories)
 - Website SEO improvements with schema markup
 - Review generation system setup
-- Weekly progress reporting
-- Money-back guarantee: top 3 in 90 days or your money back
+- Weekly or bi-weekly progress reporting
+- Money-back guarantee on the Pro plan: top 3 in 90 days or your money back
 
 **[Get Your Free Local SEO Audit →](/)**
 
