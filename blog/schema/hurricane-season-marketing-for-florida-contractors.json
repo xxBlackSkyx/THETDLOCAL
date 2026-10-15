@@ -1,0 +1,59 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "Hurricane Season Marketing For Florida Contractors",
+      "description": "Hurricane season marketing for Florida contractors that keeps Palm Coast jobs coming in before, during, and after storms. Get your free visibility check today.",
+      "datePublished": "2026-10-15",
+      "dateModified": "2026-10-15",
+      "mainEntityOfPage": "https://tdlocalseo.com/blog/hurricane-season-marketing-for-florida-contractors",
+      "author": {
+        "@type": "Person",
+        "name": "Tyler Davis"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "TD Local SEO",
+        "url": "https://tdlocalseo.com/"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How early should a Palm Coast contractor start hurricane season marketing?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Start in the calm weeks before a storm threatens, ideally now, with October still in the season. Update your Google Business Profile services, build or refresh your service pages, and request reviews from recent customers. Waiting until a storm is forecast gives you little time, because search demand climbs quickly and competitors are already updating their listings. Early work also gives Google time to process your changes, so your profile is stable when the calls begin. Plan to refresh posts and hours weekly during the active months."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should I pause paid ads during a storm?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Pause or adjust paid ads when your crews are fully booked or your office cannot take calls. Paying for clicks that lead to voicemail wastes budget and frustrates homeowners who may then leave negative reviews. Keep a small budget running if you can answer calls and handle the demand, and increase it when you have capacity. Set your ad schedule to match your real working hours, and turn on call tracking so you can see which campaigns produce answered calls rather than just clicks."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What should my Google Business Profile say during a storm?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Your profile should state your services, service areas, emergency contact method, and current availability in plain language. Use a Google Post to explain what homeowners should do if they have a roof leak, water intrusion, or fallen tree, and include your phone number. If you are temporarily closed, set that status. If you are open with a waitlist, say so in the description and post. Avoid vague messages like \"call for details\" because they do not help a homeowner decide quickly. Clear, factual updates reduce wasted calls and improve trust."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I get reviews from storm customers without seeming pushy?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ask within a few days of completing the job, when the customer remembers the work clearly. Send a short message that thanks them, names the specific repair, and includes a direct link to your review form. Avoid offering incentives, since that can violate Google's review policies. If a customer had a difficult experience, respond to their concern first and invite them to share feedback later. A steady flow of recent, specific reviews from ordinary jobs is more useful than a sudden spike from a single storm week."
+          }
+        }
+      ]
+    }
+  ]
+}
