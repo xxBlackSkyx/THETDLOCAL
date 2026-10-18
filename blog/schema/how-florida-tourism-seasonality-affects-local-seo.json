@@ -1,0 +1,22 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "How Florida Tourism Seasonality Affects Local SEO",
+      "description": "Learn how Florida tourism seasonality affects local SEO for Palm Coast businesses. Get your free visibility check from TD Local SEO today.",
+      "datePublished": "2026-10-18",
+      "dateModified": "2026-10-18",
+      "mainEntityOfPage": "https://tdlocalseo.com/blog/how-florida-tourism-seasonality-affects-local-seo",
+      "author": {
+        "@type": "Person",
+        "name": "Tyler Davis"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "TD Local SEO",
+        "url": "https://tdlocalseo.com/"
+      }
+    }
+  ]
+}
