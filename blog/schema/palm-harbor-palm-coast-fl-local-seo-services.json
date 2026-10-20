@@ -1,0 +1,59 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "Palm Harbor Palm Coast FL Local SEO Services",
+      "description": "Palm harbor palm coast fl local seo services for Flagler County businesses. Get a free visibility check and call (386) 206-6786 today.",
+      "datePublished": "2026-10-20",
+      "dateModified": "2026-10-20",
+      "mainEntityOfPage": "https://tdlocalseo.com/blog/palm-harbor-palm-coast-fl-local-seo-services",
+      "author": {
+        "@type": "Person",
+        "name": "Tyler Davis"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "TD Local SEO",
+        "url": "https://tdlocalseo.com/"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How long does local SEO take to show results?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Profile updates like correcting your category, adding services, and fixing your address can be reflected within days of Google processing the change. Ranking improvements for competitive searches take longer because they depend on your reviews, your citations, and how often customers engage with your listing. A realistic plan judges progress by monthly reports showing calls, direction requests, and visibility in the map pack, not by a single ranking screenshot."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should I put Palm Harbor or Palm Coast in my Google Business Profile name?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Your business name should match the name on your signage, your license, and your tax records. Adding location words to the name violates Google's guidelines and can lead to suspension. Put \"Palm Coast, FL\" in your description, your service area, your services, and your website instead, where it describes your work accurately without changing the name customers see."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need a separate page for every Palm Coast neighborhood?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You need separate pages only for areas where you can write useful, specific content about the work you do. A landscaper in Grand Haven might have a strong case for a dedicated page that covers local lawn conditions and typical service schedules. A plumber who serves the whole city may be better served by one service area page that lists the neighborhoods covered. Thin pages that repeat the same paragraph across many locations usually hurt more than they help."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I handle local SEO myself, or do I need an agency?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You can handle the core steps yourself: verify your profile, set categories and services, fix inconsistent citations, and reply to reviews. Many owners stall on consistency, technical website fixes, and ongoing content. An agency is useful if you lack time to maintain the work every month or if your market is crowded. Either way, insist on clear reporting that shows what changed, so you can judge whether the work is moving calls and visits."
+          }
+        }
+      ]
+    }
+  ]
+}
