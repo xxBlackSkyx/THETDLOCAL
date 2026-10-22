@@ -1,0 +1,22 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "Port Orange FL Local SEO Services",
+      "description": "Port Orange FL local SEO services that get your business found on Google Maps. Get a free visibility check from TD Local SEO today.",
+      "datePublished": "2026-10-22",
+      "dateModified": "2026-10-22",
+      "mainEntityOfPage": "https://tdlocalseo.com/blog/port-orange-fl-local-seo-services",
+      "author": {
+        "@type": "Person",
+        "name": "Tyler Davis"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "TD Local SEO",
+        "url": "https://tdlocalseo.com/"
+      }
+    }
+  ]
+}
