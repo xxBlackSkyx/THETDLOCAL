@@ -1,0 +1,59 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "New Smyrna Beach FL SEO Company",
+      "description": "Need a New Smyrna Beach FL SEO company? Book a free visibility check with TD Local SEO in Palm Coast and see where your business ranks today.",
+      "datePublished": "2026-10-23",
+      "dateModified": "2026-10-23",
+      "mainEntityOfPage": "https://tdlocalseo.com/blog/new-smyrna-beach-fl-seo-company",
+      "author": {
+        "@type": "Person",
+        "name": "Tyler Davis"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "TD Local SEO",
+        "url": "https://tdlocalseo.com/"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How long does local SEO take to show results?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Changes to a Google Business Profile, such as a corrected category or updated hours, can appear relatively quickly. Rankings for competitive services in busy towns take longer because they depend on how often Google sees your business mentioned, how well your pages match the search, and how your reviews compare to nearby competitors. Expect progress to build over months rather than days. A good provider will show you milestones along the way, such as completed profile fixes, new service pages, and a review plan, so you can measure movement before the full results arrive."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need a New Smyrna Beach FL SEO company if I already have a Palm Coast office?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It depends on where your customers are. If your business serves New Smyrna Beach and nearby Volusia County towns, your local search presence should reflect those communities, even if your office is in Flagler County. An agency that understands both counties can set the right service areas, write accurate local content, and avoid listing an address that does not match your actual service. Ask any provider how they will handle your address and service areas before work begins so your listings stay accurate."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I manage my own Google Business Profile?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. You should own your profile and keep control of it at all times. Your provider should be added as a manager, which gives them permission to edit most details without transferring ownership. Make sure you have the login information stored securely, and check the profile every few weeks to confirm your hours, photos, and services are correct. If you ever end the relationship with a provider, you will keep your listing, your reviews, and your history."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does the money-back guarantee cover?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "TD Local SEO offers a top-3-in-90-days money-back guarantee. Before you sign, ask for the written terms. Confirm which search terms and service area the guarantee covers, what counts as a top-3 placement, what you need to provide, such as access to your profile and timely approvals, and how the refund process works. Clear terms protect you and keep expectations realistic for everyone involved."
+          }
+        }
+      ]
+    }
+  ]
+}
