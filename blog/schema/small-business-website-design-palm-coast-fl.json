@@ -1,0 +1,59 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "Small Business Website Design Palm Coast FL",
+      "description": "Small business website design palm coast fl that drives calls: service pages, click-to-call, and GBP alignment. Request a free visibility check.",
+      "datePublished": "2026-10-24",
+      "dateModified": "2026-10-24",
+      "mainEntityOfPage": "https://tdlocalseo.com/blog/small-business-website-design-palm-coast-fl",
+      "author": {
+        "@type": "Person",
+        "name": "Tyler Davis"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "TD Local SEO",
+        "url": "https://tdlocalseo.com/"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Do I need a full rebuild, or can I just update my current website?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It depends on what the current site does. If the pages load quickly on a phone, each service has a clear page, and the phone number is tappable, updating content and fixing the Google Business Profile link may be enough. If the site is a single page, runs on an outdated template that breaks on mobile, or has no service area content, a rebuild is usually faster and cheaper than patching it piece by piece. Test your current site on your phone first and make the decision from what you see."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need a separate page for every Palm Coast neighborhood?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Separate pages for every neighborhood usually produce thin, near-identical content that does little for rankings. Build one strong service area page that names the communities you serve and explains real differences in your work, such as typical job types or response times in certain areas. Then add project photos labeled with their locations. Create dedicated pages only when a neighborhood has enough unique detail to support a full page of useful information."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will a new website improve my Google Business Profile results?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The two work together but are separate. The website provides the content, service pages, and proof of work that help Google understand what you offer. The Google Business Profile controls your map listing, categories, hours, and service area. Linking the two, keeping your name, address, and phone number identical across both, and making sure the website displays the same services as the profile gives Google consistent information to work with. A new site alone will not fix a profile with the wrong category or an incomplete service list."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does it take for a new site to show up in local results?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "There is no fixed timeline, and any provider who promises one should explain their reasoning in writing. Search engines need to find and process your pages, and results depend on how competitive your service and area are. You can check progress yourself by searching your exact service and neighborhood in a private browser window every few weeks. Ask your provider for clear milestones, such as when service pages are published, when the profile is connected, and when rankings will be reviewed."
+          }
+        }
+      ]
+    }
+  ]
+}
