@@ -1,0 +1,22 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "Why Is My Business Not Showing On Google Maps",
+      "description": "Why is my business not showing on Google Maps? Get a free Palm Coast visibility check from TD Local SEO. Call (386) 206-6786 today.",
+      "datePublished": "2026-10-25",
+      "dateModified": "2026-10-25",
+      "mainEntityOfPage": "https://tdlocalseo.com/blog/why-is-my-business-not-showing-on-google-maps",
+      "author": {
+        "@type": "Person",
+        "name": "Tyler Davis"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "TD Local SEO",
+        "url": "https://tdlocalseo.com/"
+      }
+    }
+  ]
+}
