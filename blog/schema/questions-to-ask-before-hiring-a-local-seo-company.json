@@ -1,0 +1,59 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "Questions To Ask Before Hiring A Local SEO Company",
+      "description": "Questions to ask before hiring a local SEO company in Palm Coast, FL. Get a free visibility check from TD Local SEO. Call (386) 206-6786 today.",
+      "datePublished": "2026-10-27",
+      "dateModified": "2026-10-27",
+      "mainEntityOfPage": "https://tdlocalseo.com/blog/questions-to-ask-before-hiring-a-local-seo-company",
+      "author": {
+        "@type": "Person",
+        "name": "Tyler Davis"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "TD Local SEO",
+        "url": "https://tdlocalseo.com/"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How long does it take to see results from local SEO in Palm Coast?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "There is no fixed timeline that applies to every business. Results depend on how complete your profile already is, how many competitors are working in your category, how many reviews you have, and how consistently you respond to customers. Ask any agency to define what they mean by results in writing, and to set checkpoints for the first 90 days. A useful plan includes specific tasks completed each month, such as corrected listings, updated categories, new service pages, and a steady review response process."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I manage my Google Business Profile myself instead of hiring an agency?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, many owners manage their own profile successfully, especially if they have a small service area and a clear set of services. An agency adds the most value when your business needs citation cleanup, service page content, review systems, and regular reporting that you do not have time to handle. If you manage the profile yourself, keep the owner role, update your hours and services when they change, and respond to every review. You can always hire help later for specific projects."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should I pay a monthly retainer or a one-time project fee?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It depends on what you need. A one-time project fee can work well for a profile cleanup, citation audit, or initial service page setup. Ongoing work, such as review management, content updates, and monthly reporting, usually fits a retainer. Ask each agency to separate one-time and recurring costs in the proposal so you can compare them fairly. Make sure you understand what happens to the work if you stop paying, including access to your profile and any content created for your website."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What should I do if an agency already controls my Google Business Profile?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Start by checking the users section of your profile to see who has access and what role each person holds. If you are not the owner, ask the agency in writing to transfer ownership to your business account or add you as an owner. Keep copies of your business name, address, phone number, hours, photos, and review history in a document you control. If the agency refuses to share access or transfer ownership, treat that as a serious warning sign and seek advice before you sign anything else."
+          }
+        }
+      ]
+    }
+  ]
+}
