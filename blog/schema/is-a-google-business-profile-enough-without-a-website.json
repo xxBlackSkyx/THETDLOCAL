@@ -1,0 +1,59 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "Is A Google Business Profile Enough Without A Website",
+      "description": "Is a Google Business Profile enough without a website? See what it covers in Palm Coast and what it misses. Call TD Local SEO at (386) 206-6786 today.",
+      "datePublished": "2026-10-30",
+      "dateModified": "2026-10-30",
+      "mainEntityOfPage": "https://tdlocalseo.com/blog/is-a-google-business-profile-enough-without-a-website",
+      "author": {
+        "@type": "Person",
+        "name": "Tyler Davis"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "TD Local SEO",
+        "url": "https://tdlocalseo.com/"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Can I rank in Palm Coast with only a Google Business Profile?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, a profile can appear in local results for Palm Coast without a website, especially for searches that combine your primary category with nearby areas. Ranking depends on relevance, distance from the searcher, and prominence, which includes reviews and listing completeness. A profile alone can produce calls for straightforward services. However, competition is tighter for high-intent searches, and a website with dedicated service pages gives you more ways to show relevance. Start by completing the profile fully, then decide whether your market requires more material."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Google require a website to verify my business?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Google offers several verification methods, and a website is not required to verify a Google Business Profile. The available options vary by business type and location, and they may include a postcard sent to the business address, a phone call, or other methods shown inside your dashboard. Verification confirms that you control the listing. It does not confirm that your business has a website. If you run a service-area business and hide your address, check the options available to you in the verification flow, since some methods depend on a listed address."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What if customers in Flagler Beach or Bunnell ask for pricing details?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "If customers from Flagler Beach or Bunnell ask for pricing, the profile can help with general price ranges in the services section and in the description, provided you can state them accurately. Some businesses also add a price range for specific services where the platform allows it. However, detailed pricing for jobs that vary, such as roof replacements or landscape design, usually needs more explanation than a profile can hold. A simple page explaining what affects cost and how you provide estimates would answer most of those questions and reduce unnecessary calls."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should I build a website if I already have a good profile?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Build a website if your profile is generating interest but customers still need answers before they call. A strong profile proves that you are real, active, and trusted. A website explains what you do, how you do it, and why a customer should choose you. If your reviews are strong and your work is straightforward, the profile may be enough for now. If you compete for high-value jobs or want to rank for several specific services, a website with focused pages is a logical next step. Review your profile insights and the questions you hear on the phone before deciding."
+          }
+        }
+      ]
+    }
+  ]
+}
