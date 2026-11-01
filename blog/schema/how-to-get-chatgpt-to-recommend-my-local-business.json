@@ -1,0 +1,59 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "How To Get Chatgpt To Recommend My Local Business",
+      "description": "Learn how to get ChatGPT to recommend my local business in Palm Coast. Clear steps for listings and reviews. Book your free visibility check today.",
+      "datePublished": "2026-11-01",
+      "dateModified": "2026-11-01",
+      "mainEntityOfPage": "https://tdlocalseo.com/blog/how-to-get-chatgpt-to-recommend-my-local-business",
+      "author": {
+        "@type": "Person",
+        "name": "Tyler Davis"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "TD Local SEO",
+        "url": "https://tdlocalseo.com/"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Can I pay to be recommended in ChatGPT answers?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "There is no known paid placement that guarantees your business will be named in ChatGPT answers. Be skeptical of any vendor who claims otherwise. The reliable path is to strengthen the signals that matter: accurate listings, a clear website with service pages, consistent contact details, and genuine customer reviews. Those improvements also help your performance in Google and other search tools, so the effort is not wasted if assistant behavior changes later."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does it take for changes to show up?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Timing varies. Edits to your Google Business Profile can appear in search results and maps within days, while changes to your website depend on how often search engines crawl and index your pages. Directory updates can take longer, and assistant answers depend on which sources they pull at the time of each question. Track your progress with a monthly test, and focus on completing each step thoroughly rather than expecting an immediate result."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need Google Business Profile for this to work?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, a complete Google Business Profile is one of the most useful foundations you can build. It gives a verified, public record of your business name, address or service area, categories, hours, services, photos, and reviews. Many other sources and tools rely on similar information, so a well-maintained profile helps your business appear consistently. If you do not have one, claim it first, because the other steps build on it."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does this work for businesses outside Palm Coast city limits?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It does, as long as you state your coverage accurately. A business in Bunnell, Flagler Beach, or Hammock can use the same approach: name the communities you serve, list them as service areas in your profile, mention them on relevant service pages, and keep those details identical across listings. The goal is to make your coverage easy to understand, not to pretend to serve areas you do not reach. Accurate local detail is what makes a recommendation useful to the person asking."
+          }
+        }
+      ]
+    }
+  ]
+}
