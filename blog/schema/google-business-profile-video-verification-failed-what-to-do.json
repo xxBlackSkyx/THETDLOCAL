@@ -1,0 +1,59 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "Google Business Profile Video Verification Failed What To Do",
+      "description": "Google Business Profile video verification failed? Follow these fixes for Palm Coast businesses, or call TD Local SEO at (386) 206-6786 for a free check.",
+      "datePublished": "2026-11-03",
+      "dateModified": "2026-11-03",
+      "mainEntityOfPage": "https://tdlocalseo.com/blog/google-business-profile-video-verification-failed-what-to-do",
+      "author": {
+        "@type": "Person",
+        "name": "Tyler Davis"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "TD Local SEO",
+        "url": "https://tdlocalseo.com/"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Can I verify a Palm Coast business listing without a video?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, in most cases. Google may offer postcard, phone, email, or other verification options alongside video, depending on your business type, location, and account history. Check your dashboard after a failed video attempt to see which methods are available. If a mailed postcard is the option you receive, allow time for delivery to the address on your listing and enter the code exactly as printed. Keep your listing details unchanged while you wait so the code matches the information on file."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What if my business operates from a home in Grand Haven or another residential area?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You can still verify, but you need to show evidence that the business operates from that location or that you serve customers in the area. Hide your address if you do not meet clients at home, and set a service area instead. For the video, show your work vehicles, branded tools, and business paperwork, and avoid filming private living spaces beyond what is needed to show the business activity. Being honest about your setup and matching the listing to it gives you the best chance of approval."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long should I wait before trying verification again after a failure?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Wait long enough to make a real change, not just to pass time. Review the rejection notice, check that your listing details match your operation, and prepare a new recording that addresses any obvious gaps. If you have made those changes, you can submit a new attempt the same day. If the status shows that a previous request is still under review, avoid submitting duplicates, since multiple pending requests can complicate the process. Contact the developer or operator of the tool you are using if you cannot see a clear path forward."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should I hire someone to handle verification for my Palm Coast business?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "If you have tried two or more attempts, your listing is central to your leads, and you are not sure what the reviewer is looking for, getting help can save weeks. An agency familiar with local listings can audit your profile, confirm the details match your operation, and advise you on the right evidence to show. The decision depends on how much time you have and how much a delay costs you. Even if you handle verification yourself, plan on a regular review of your profile once it is live."
+          }
+        }
+      ]
+    }
+  ]
+}
