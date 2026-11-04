@@ -1,0 +1,59 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "SEO Company Deland FL",
+      "description": "Looking for a seo company deland fl businesses trust? TD Local SEO builds local visibility in Flagler and Volusia. Get your free visibility check today.",
+      "datePublished": "2026-11-04",
+      "dateModified": "2026-11-04",
+      "mainEntityOfPage": "https://tdlocalseo.com/blog/seo-company-deland-fl",
+      "author": {
+        "@type": "Person",
+        "name": "Tyler Davis"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "TD Local SEO",
+        "url": "https://tdlocalseo.com/"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How long does local SEO take to show results in Palm Coast?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most local businesses see early changes within a few weeks, especially when a Google Business Profile had missing categories, wrong hours, or no service areas. Those fixes can affect map visibility relatively quickly. Website content and review growth take longer, because search engines need time to recrawl pages and because customers leave reviews gradually. A realistic plan judges progress over several months rather than a single week. Ask your provider which changes should appear first and what you should see at thirty, sixty, and ninety days."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need a separate page for DeLand if my business is in Palm Coast?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Only if you actually serve DeLand regularly and can describe real work there. A page should explain the services you provide in that area, mention the types of properties or neighborhoods you have worked on, and include a clear way to contact you. A page that simply swaps the city name into a template is thin and rarely helpful. If you serve DeLand occasionally, list it as a service area on your Google Business Profile and mention it naturally in project descriptions. Quality matters more than the number of city pages."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What should I look for in a Google Business Profile audit?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Start with the primary category, which should match your main revenue-generating service. Check that secondary categories are relevant and not excessive. Confirm your business name matches your signage and legal name, your address is correct or your service-area setting is configured properly, and your phone number and website link work. Review your hours, including holidays. Look at your photos and make sure they show real work, not stock images. Finally, read your reviews, check whether they have replies, and note any questions in the Q&A section that have not been answered. Each item takes "
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I know if an seo company deland fl provider is worth the cost?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Compare the cost with the value of the customers you can realistically win. If one new customer is worth a few thousand dollars to your business, a monthly fee that produces a handful of qualified calls may be justified. Ask the provider to show you the reports they will send, then test whether those reports connect to phone calls, form fills, and direction requests. A worthwhile provider can explain its work in plain language, shows you what changed in your listings, and gives you access to your own accounts. If a provider cannot do those things, the price does not matter much."
+          }
+        }
+      ]
+    }
+  ]
+}
