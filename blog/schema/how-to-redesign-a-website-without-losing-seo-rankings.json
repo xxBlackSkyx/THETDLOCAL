@@ -1,0 +1,59 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "How To Redesign A Website Without Losing SEO Rankings",
+      "description": "Learn how to redesign a website without losing SEO rankings in Palm Coast. Get your free visibility check from TD Local SEO today.",
+      "datePublished": "2026-11-05",
+      "dateModified": "2026-11-05",
+      "mainEntityOfPage": "https://tdlocalseo.com/blog/how-to-redesign-a-website-without-losing-seo-rankings",
+      "author": {
+        "@type": "Person",
+        "name": "Tyler Davis"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "TD Local SEO",
+        "url": "https://tdlocalseo.com/"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Will I lose rankings if I change my domain name?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You can lose rankings if you change the domain without a proper migration, but the loss is usually recoverable when it is handled correctly. Set up a 301 redirect from every page on the old domain to the matching page on the new domain. Update your Google Business Profile website field, add the new domain to Search Console as a separate property, and use the Change of Address tool in Search Console. Keep the old domain registered and pointed to the new site for as long as you can. Expect some fluctuation for a few months while Google processes the change, and track your important pages closely"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long should I keep redirects in place?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Keep redirects in place as long as the old URLs receive traffic or have backlinks pointing to them, which in practice means indefinitely for any page that once mattered. Removing a redirect turns a valid link from another website into a dead end. Redirects cost almost nothing to maintain on modern hosting platforms, so there is little reason to remove them. Review your redirect file once a year, check for chained or broken redirects, and fix them. A roofer or plumber who keeps these redirects active protects years of accumulated local search history."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I redesign my own WordPress or Wix site without hurting my SEO?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, provided you follow the same migration process. Platform choice does not determine whether rankings survive. WordPress and Wix both allow you to edit URLs, set redirects, and change titles and descriptions. The risk comes from changing the structure without mapping the old pages, from leaving staging settings in place, and from removing content that ranks. If you are comfortable exporting a crawl, reviewing Search Console data, and setting up a redirect plugin or built-in redirect manager, you can handle the project yourself. If not, a local SEO partner can run the audit and mapping while"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I know whether the redesign worked?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Measure three things. First, check Search Console for errors in the Page Indexing report, including 404 pages and redirect issues. Second, compare clicks and impressions for your valuable pages against the export you took before launch, looking at at least three months of data to smooth out seasonal swings. Third, watch your Google Business Profile for calls, direction requests, and website clicks. Also run manual searches for your brand name and your main service-plus-Palm Coast terms in a private browser window. If the old rankings return within a reasonable window and your profile activity "
+          }
+        }
+      ]
+    }
+  ]
+}
