@@ -1,0 +1,22 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "How To Report Fake Google Reviews From Competitors",
+      "description": "Learn how to report fake Google reviews from competitors in Palm Coast, FL. Clear steps and what Google accepts. Call TD Local SEO today.",
+      "datePublished": "2026-11-07",
+      "dateModified": "2026-11-07",
+      "mainEntityOfPage": "https://tdlocalseo.com/blog/how-to-report-fake-google-reviews-from-competitors",
+      "author": {
+        "@type": "Person",
+        "name": "Tyler Davis"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "TD Local SEO",
+        "url": "https://tdlocalseo.com/"
+      }
+    }
+  ]
+}
