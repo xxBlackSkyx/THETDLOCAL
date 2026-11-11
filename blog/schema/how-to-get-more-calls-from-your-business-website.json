@@ -1,0 +1,59 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "How To Get More Calls From Your Business Website",
+      "description": "Learn how to get more calls from your business website with practical fixes for Palm Coast service companies. Book a free visibility check today.",
+      "datePublished": "2026-11-11",
+      "dateModified": "2026-11-11",
+      "mainEntityOfPage": "https://tdlocalseo.com/blog/how-to-get-more-calls-from-your-business-website",
+      "author": {
+        "@type": "Person",
+        "name": "Tyler Davis"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "TD Local SEO",
+        "url": "https://tdlocalseo.com/"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Should I use a call tracking number on my website?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A call tracking number is a separate phone number that forwards to your main line and records where the call came from. It can show whether calls originate from the website, your Google Business Profile, or a directory. This helps you decide which marketing to keep and which to cut. The tradeoff is that you must make sure the tracking number forwards reliably and that you are not confusing customers with multiple numbers. Many Palm Coast businesses use tracking on a single channel, such as the website, so they can measure its impact without changing the number on their profile. If you do use t"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need a separate page for every city near Palm Coast?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No, and creating dozens of thin pages for nearby towns usually hurts more than it helps. Search engines and visitors respond better to a small number of detailed pages that describe real service areas. A better approach is one main service area page that lists Palm Coast, Flagler Beach, and nearby communities you truly serve, plus a few neighborhood-specific pages where you have real projects or details to share. Each page should explain what you do in that area, how quickly you typically respond, and what a visitor can expect. Avoid copying the same paragraph and swapping in different town na"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does a contact form reduce the number of calls I receive?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It can, if it is the only way to reach you. When a form is the only visible option, some visitors will not bother to fill it out, especially if they expect a slow reply. When a form sits alongside a clearly visible phone number, the form adds leads without replacing calls. The best setup puts the phone number and a \"Call Now\" button at the top, then offers the form lower on the page for people who prefer to write. Track which one your customers use, then adjust placement based on what you see. If you are a plumber or electrician handling urgent jobs, the phone should always be the most promine"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does it take for website changes to affect calls?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "There is no fixed timeline, and any promise of an exact number of days should be treated with caution. Changes to your phone number placement, tap-to-call links, and page layout usually take effect as soon as the page is live, so visitors can use them immediately. Changes that affect search visibility, such as new local pages or updated business information, depend on how often search engines crawl and index your site. Google may update your Business Profile within a few days or may take longer. Keep your information consistent, make the changes, and monitor your call activity over several wee"
+          }
+        }
+      ]
+    }
+  ]
+}
