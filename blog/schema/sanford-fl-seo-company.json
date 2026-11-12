@@ -1,0 +1,22 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "Sanford FL SEO Company",
+      "description": "Searching for a Sanford FL SEO company? Request your free visibility check from TD Local SEO today.",
+      "datePublished": "2026-11-12",
+      "dateModified": "2026-11-12",
+      "mainEntityOfPage": "https://tdlocalseo.com/blog/sanford-fl-seo-company",
+      "author": {
+        "@type": "Person",
+        "name": "Tyler Davis"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "TD Local SEO",
+        "url": "https://tdlocalseo.com/"
+      }
+    }
+  ]
+}
