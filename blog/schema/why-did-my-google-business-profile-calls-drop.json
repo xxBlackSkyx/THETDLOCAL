@@ -1,0 +1,59 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "Why Did My Google Business Profile Calls Drop",
+      "description": "Calls from your Google profile dropped? Learn why did my Google Business Profile calls drop and how to fix it. Get a free visibility check today.",
+      "datePublished": "2026-11-14",
+      "dateModified": "2026-11-14",
+      "mainEntityOfPage": "https://tdlocalseo.com/blog/why-did-my-google-business-profile-calls-drop",
+      "author": {
+        "@type": "Person",
+        "name": "Tyler Davis"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "TD Local SEO",
+        "url": "https://tdlocalseo.com/"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Could a Google update be the reason my calls fell?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, it is possible. Google adjusts how it ranks local results, and those changes can shift which businesses appear for certain searches. Check whether impressions fell at the same time as calls. If visibility dropped across your category in Palm Coast, the cause may be a ranking change rather than a problem with your listing. In that case, focus on the factors you control: accurate categories, complete service information, recent photos, steady reviews, and a consistent phone number and address across the web."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does a storm closure hurt my profile over the long term?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It usually does not, provided you correct the listing promptly. The damage comes from the days the profile showed closed or outdated hours while you were actually open and ready for calls. Once you are back to normal operations, remove special hours, confirm your regular schedule, and check that the profile reflects your current availability. A flood of catch-up calls after a storm is also normal, so do not judge your performance by a single week."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why do calls show up in my profile but not in my phone system?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Google counts calls that start from your profile, which means calls placed by tapping the phone number or call button on your listing. Your phone system may count every inbound call, including calls from your website, text-based leads, referrals, and direct dials from contacts who already have your number. The two numbers will rarely match. Compare trends rather than exact totals. If the profile numbers fell while total inbound calls held steady, your customers may be finding you through other channels now, and that is worth exploring."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should I change my phone number to fix the drop?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Only if the current number is wrong, disconnected, routed incorrectly, or inconsistent across the web. Changing a working number creates new problems, since your old number may still appear on directories, invoices, and social profiles, and customers who already have it will keep calling it. If you do change it, update your profile, website, and major directory listings at the same time, and keep the old number active with a forwarding message for as long as you can. A number change should fix a documented problem, not serve as a guess."
+          }
+        }
+      ]
+    }
+  ]
+}
